@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import HeaderNav from "@/components/headerNav.vue";
+import HeaderNav from "@/components/HeaderNav.vue";
 export default {
   components: {
     HeaderNav
