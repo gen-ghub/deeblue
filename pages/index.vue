@@ -1,78 +1,39 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        deeblue
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <section>
+    <PhotoImage />
+    <TopExplanation />
+    <Business />
+    <section class="h-full flex justify-center contact">
+        <nuxt-link to="/Link03" class="block w-full flex justify-center m-2">
+          <div>
+            <h1 class="pt-32 pb-10">お問い合わせはこちらから</h1>
+            <h3 class="pt-8 pb-32">　　　　Contact</h3>
+          </div>
+        </nuxt-link>
+    </section>
+  </section>
 </template>
 
 <script>
-export default {}
+import PhotoImage from '@/components/PhotoImage.vue'
+import TopExplanation from '@/components/TopExplanation.vue'
+import Business from '../components/Business.vue'
+
+export default {
+  components: {
+    PhotoImage,
+    TopExplanation,
+    Business,
+  },
+}
+
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+<style lang="scss" scoped>
+.contact{
+  :hover{
+    background-color: #022444;
+    color: white;
+  }
 }
 </style>
