@@ -1,21 +1,21 @@
 <template>
-    <header class="fixed z-20 pt-10 pb-8 w-full  text-white font-black tracking-widest business-header">
-      <div class="grid lg:grid-cols-2 ">
-        <div class="text-xl lg:text-3xl ml-8">
+    <header class="fixed z-20 pt-10 pb-8 w-full  text-white tracking-widest font-thin font-serif">
+      <div class="grid sm:grid-cols-2 ">
+        <div class="ml-8">
           <router-link to="/">
-            <h1>DEEBLUE</h1>
+            <h1 class="text-4xl">DEEBLUE</h1>
           </router-link>
         </div>
         <nav>
       <ul class="lg:text-xl flex content-center mr-8 h-full">
         <li>
-          <nuxt-link to="/Link01">事業内容</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link01">事業内容</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/Link02">企業情報</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/Link03">お問い合わせ</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link03">お問い合わせ</nuxt-link>
         </li>
       </ul>
     </nav>
@@ -64,5 +64,17 @@ transition: 1s;
 
   }
 }
+
+@media screen and (max-width: 1199px) {
+  /* スクリーンサイズが1199px以下の場合に適用 */
+  header{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* スクリーンサイズが767px以下の場合に適用 */
+
+  }
 </style>
 

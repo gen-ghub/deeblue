@@ -2,7 +2,7 @@
   <section class="summary grid lg:grid-cols-2 h-full">
       <section class="summary-left ">
         <div class="h-full flex flex-wrap content-center justify-center">
-          <img class="" src="~/assets/logo.png" />
+          <h1 class="text-6xl leading-loose tracking-widest font-thin font-serif">DEEBLUE</h1>
         </div>
       </section>
       <section class="summary-right bg-white">
@@ -48,4 +48,36 @@ export default {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .summary-right div{
+    padding-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .summary-right div{
+    padding-left: 8rem;
+  }
+  .summary-left div h1{
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 1022px) {
+  .summary-right div{
+    align-items: center;
+    padding: 0;
+  }
+  .summary-left div{
+    padding: 10rem 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .summary-left div{
+    padding: 6rem 0;
+  }
+}
+
 </style>
+

@@ -118,9 +118,7 @@ export default {
   width: 55vw;
   margin-left: 7vw;
 }
-.business-header{
-  color: black;
-}
+
 .image-size{
   height: 70vh;
   width: 60vw;
