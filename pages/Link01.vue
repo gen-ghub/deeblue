@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section class="business">
+      <div>
+        <img class="link-img" src="~/assets/link1.jpg" />
+      </div>
+    <section class="business mb-10">
       <div class="grid grid-cols-12 ">
         <div class="col-start-2 col-span-10 mt-56">
           <div class="flex">
@@ -94,15 +97,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.business{
-  background-color: #fff;
-  height: 80vh;
+.link-img{
   border-top: 8px solid #022444;
-  img{
     height: 70vh;
     width: 100vw;
     object-fit: cover;
   }
+.business{
+  background-color: #fff;
+  height: 80vh;
+
 }
 .title{
   width: 45vw;

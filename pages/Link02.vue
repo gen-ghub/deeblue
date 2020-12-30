@@ -2,7 +2,7 @@
 <template>
   <div>
     <section class="business">
-      <img class="pt-2" src="~/assets/a.jpg" />
+      <img class="pt-2" src="~/assets/link2.jpg" />
       <div class="grid grid-cols-12 pt-24 text-white">
         <section class="col-start-2 col-span-4  ">
           <p class="">MISSION</p>
