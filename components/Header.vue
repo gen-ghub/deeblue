@@ -1,7 +1,7 @@
 <template>
     <header class="fixed z-20 pt-10 pb-8 w-full  text-white tracking-widest font-thin font-serif">
       <div class="grid sm:grid-cols-2 ">
-        <div class="ml-8">
+        <div class="ml-8 w-1/4">
           <router-link to="/">
             <h1 class="text-4xl">DEEBLUE</h1>
           </router-link>

@@ -74,7 +74,12 @@ export default {
 </script>
 <style>
 .contact-container {
-  padding: 64px;
+
+  padding-top:20vh;
   text-align: center;
+  background-color: slategray;
+}
+p{
+  padding: 10px;
 }
 </style>
