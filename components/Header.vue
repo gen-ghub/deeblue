@@ -15,7 +15,7 @@
           <nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/contact">お問い合わせ</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Contact">お問い合わせ</nuxt-link>
         </li>
       </ul>
     </nav>

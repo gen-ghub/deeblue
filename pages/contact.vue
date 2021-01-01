@@ -1,34 +1,44 @@
 <template>
-  <section class="contact-container">
-    <template v-if="!finished">
-      <form name="contact" method="POST" data-netlify="true" @submit.prevent>
-        <p>
-          <label>
-            お名前:
-            <input v-model="form.name" type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            メールアドレス:
-            <input v-model="form.email" type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            お問い合わせ内容:
-            <textarea id="form-content" v-model="form.content" name="content" />
-          </label>
-        </p>
-        <p>
-          <button @click="handleSubmit" v-text="'送信'" />
-        </p>
-      </form>
-    </template>
-    <template v-else>
-      <p v-text="'お問い合わせ頂きありがとうございました。'" />
-      <p><nuxt-link to="/" v-text="'TOPへ'" /></p>
-    </template>
+  <section class="contact-container border-b-2">
+    <div class="flex justify-center ">
+      <template v-if="!finished">
+        <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+          <p class="flex flex-col text-2xl mb-6">
+            <label class="text-white pb-2">
+              お名前
+            </label>
+              <input class="rounded" v-model="form.name" type="text" name="name" />
+          </p>
+          <p class="flex flex-col text-2xl mb-6">
+            <label class="text-white pb-2">
+              メールアドレス
+            </label>
+              <input class="rounded" v-model="form.email" type="email" name="email" />
+          </p>
+          <p class="flex flex-col text-2xl mb-8">
+            <label class="text-white pb-2">
+              お問い合わせ内容
+            </label>
+              <textarea class="rounded h-40" id="form-content" v-model="form.content" name="content" />
+          </p>
+          <div class="" v-show="false">
+            <label for="message">スパムでない場合は空欄</label>
+            <input type="text" name="bot-field" v-model="botField"/>
+          </div>
+          <p class="flex flex-col text-2xl">
+            <button class="rounded text-white border border-light-blue-500 border-opacity-75 py-2  hover:bg-blue-900 " @click="handleSubmit" v-text="'送信'" />
+          </p>
+        </form>
+      </template>
+      <template v-else>
+        <div class="text-4xl text-white p-20">
+          <p v-text="'お問い合わせ頂きありがとうございました。'" />
+          <div class="flex justify-center ">
+            <nuxt-link class="rounded text-white mt-20 py-2 px-20 hover:bg-blue-900" to="/" v-text="'TOPへ'" />
+          </div>
+        </div>
+      </template>
+    </div>
   </section>
 </template>
 <script>
@@ -74,10 +84,9 @@ export default {
 </script>
 <style>
 .contact-container {
-
-  padding-top:20vh;
-  text-align: center;
-  background-color: slategray;
+  padding-top: 20vh;
+  height: 92vh;
+  background-color:#022444 ;
 }
 p{
   padding: 10px;
