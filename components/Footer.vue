@@ -1,7 +1,36 @@
 <template>
-  <div>
-    <footer>footer</footer>
-  </div>
+    <footer>
+      <div class="grid grid-cols-6 gap-4 pt-20 pb-10">
+        <div class="col-start-2 col-span-4 flex justify-evenly">
+          <div>
+            <ul>
+              <li><router-link to="/">トップページ</router-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Link01">事業内容</nuxt-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Contact">お問い合わせ</nuxt-link></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="http://bbqdeli.jp/">[関東]バーベキュー★デリ</a></li>
+              <li><a href="http://www.bbq-ranger.com">[関西]バーベキュー隊</a></li>
+              <li><a href="https://beerdeli.jp/">ビールデリ</a></li>
+              <li><a href="flashmob.biz">ゼロモブ</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>SNS</li>
+              <li>SNS</li>
+              <li>SNS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <p class="copyright">&copy; 2021 Deeblue Co., Ltd.</p>
+      </div>
+    </footer>
 </template>
 
 <script>
@@ -15,7 +44,8 @@ footer{
   color: #fff;
   padding: 20px;
   background-color: #022444;
-  font-size: 30px;
-  font-weight: bold;
+}
+li {
+  padding-bottom: 2vh;
 }
 </style>
