@@ -1,5 +1,6 @@
     <template>
   <div>
+
     <section class="grid grid-cols-12 relative">
       <div class="absolute top-0 right-0 ">
         <img class="image-size" src="~/assets/bbq1.jpg" />
@@ -8,8 +9,8 @@
         <div class="business-bg">
           <div class="mt-32 w-3/4 ml-20 ">
             <div class="py-20 text-white">
-              <h1 class="mt-10 text-4xl font-bold"><a href="http://bbqdeli.jp/">バーベキューデリ</a>、<a href="http://www.bbq-ranger.com">バーベキュー隊</a></h1>
-              <h1 class="pb-10 text-4xl font-bold">BBQ出張レンタル</h1>
+      <h1 class=" text-xl font-bold"><a href="http://bbqdeli.jp/">バーベキューデリ</a>、<a href="http://www.bbq-ranger.com">バーベキュー隊</a></h1>
+              <h1 class="mt-20 pb-10 text-4xl font-bold">BBQ出張レンタル</h1>
               <p class="text-sm mt-8 leading-loose tracking-widest">関東・関西2拠点の幅広いエリアでBBQ・アウトドア用品の出張レンタルサービス。<br>
 お客様の希望する場所・時間・内容で要望に応じた機材や食材をお届け。<br>
 友人、会社、家族、様々なお客様に対応し手ぶらでBBQを楽しめるサービス。<br>
