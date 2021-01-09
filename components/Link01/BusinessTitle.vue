@@ -7,13 +7,15 @@
               <h1 class="text-5xl font-black leading-relaxed">”体験”としてのサービス</h1>
             </div>
             <div class="title-txt ">
-              <h1 class="text-4xl font-black leading-relaxed">これからの時代は<br>
+              <h1 class="text-4xl font-black leading-relaxed">これからの時代はQOL重視<br>
               何を体験してくかが鍵</h1>
               <div class="mt-16">
-                <p class="mb-1">これまでより更に急激に発達するこれからの社会。</p>
-                <p class="mb-1">AIの発達によりモノもより溢れ、製造自動化により価格も下がり物への価値は下がっていく。</p>
+                <p class="mb-1">より急激に発達するこれからの社会</p>
+                <p class="mb-1">AI化により物は溢れ、価値はより下がっていく。</p>
                 <p class="mb-1">人も労働時間もより減っていき、週3日労働の将来すら現実味を帯びてきている。</p>
-                <p class="mb-1">そんな時代に要求されるモノは”体験”へのサービスだと考えている。</p>
+                <p class="mb-1">そんな時代に要求され発達する”モノよりコト”</p>
+                <p class="mb-1">体験へのサービス。</p>
+                <p class="mb-1">より充実した時を過ごせるサービスを提供していきたい</p>
               </div>
             </div>
           </div>

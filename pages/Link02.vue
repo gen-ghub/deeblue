@@ -86,7 +86,7 @@
             </p>
           </div>
           <section class=" map">
-          <img class="" src="~/assets/map.jpg" />
+          <img class="" src="~/assets/user.png" />
         </section>
         </section>
 
