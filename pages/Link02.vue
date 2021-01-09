@@ -50,40 +50,32 @@
       </div>
       <div class="grid grid-cols-12 pt-40 pb-20 ">
         <section class="col-start-2 col-span-10  company">
-          <div>
-            <h1 class="">COMPANY PROFILE</h1>
+          <div class="mb-10">
+            <h1 class="text-6xl">COMPANY</h1>
           </div>
           <div class="pt-16 pb-6 ">
-            <div class="w1/2 ">
+            <div class="w1/2 text-2xl">
               <dl class="flex">
                 <dt class="w-40">会社名：</dt>
-                <dd>DEEBLUE</dd>
+                <dd>株式会社DEEBLUE</dd>
               </dl>
-              <dl class="flex mt-3">
+              <dl class="flex mt-8">
                 <dt class="w-40">設立：</dt>
                 <dd>2013年2月</dd>
               </dl>
-              <dl class="flex mt-3">
+              <dl class="flex mt-8">
                 <dt class="w-40">代表者：</dt>
-                <dd>南里</dd>
+                <dd>南里　次郎</dd>
               </dl>
-              <dl class="flex mt-3">
+              <dl class="flex mt-8">
                 <dt class="w-40">事業内容：</dt>
-                <dd>アウトドア事業</dd>
+                <dd>アウトドア用品レンタル事業、イベント事業</dd>
               </dl>
-              <dl class="flex mt-3">
+              <dl class="flex mt-8">
                 <dt class="w-40">会社所在地：</dt>
-                <dd>東京</dd>
+                <dd>東京都豊島区上池袋1-11-5-1B</dd>
               </dl>
             </div>
-          </div>
-          <div class="pt-20">
-            <h1 class="">ACCESS</h1>
-            <p class="pt-10 leading-loose">東京メトロ日比谷線/都営地下鉄浅草線　「人形町駅」より徒歩1分<br>
-            東京メトロ半蔵門線　「水天宮前駅」より徒歩7分</p>
-            <p class="mt-6 ">
-              <span class="border-b border-black p-2 font-light ">View Google Map　　　</span>
-            </p>
           </div>
           <section class=" map">
           <img class="" src="~/assets/user.png" />
