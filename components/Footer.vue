@@ -12,8 +12,8 @@
           </div>
           <div>
             <ul>
-              <li><a href="http://bbqdeli.jp/">[関東]バーベキュー★デリ</a></li>
-              <li><a href="http://www.bbq-ranger.com">[関西]バーベキュー隊</a></li>
+              <li><a href="http://bbqdeli.jp/">バーベキューデリ</a></li>
+              <li><a href="http://www.bbq-ranger.com">バーベキュー隊</a></li>
               <li><a href="https://beerdeli.jp/">ビールデリ</a></li>
               <li><a href="flashmob.biz">ゼロモブ</a></li>
             </ul>

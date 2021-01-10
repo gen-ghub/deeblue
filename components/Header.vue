@@ -9,7 +9,7 @@
         <nav>
       <ul class="lg:text-xl flex content-center mr-8 h-full">
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link01">事業内容</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link01a">事業内容</nuxt-link>
         </li>
         <li>
           <nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link>
