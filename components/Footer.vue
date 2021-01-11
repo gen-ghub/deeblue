@@ -18,13 +18,14 @@
               <li><a href="flashmob.biz">ゼロモブ</a></li>
             </ul>
           </div>
-          <div>
-            <ul>
-              <li>SNS</li>
-              <li>SNS</li>
-              <li>SNS</li>
-            </ul>
-          </div>
+          <section>
+          <h1 class="text-xl font-thin tracking-widest">SNS</h1>
+          <section class="flex">
+            <a href="/"><img class="px-2 py-1" src="~/assets/f.png" /></a><span>|</span>
+            <a href="/"><img class="px-2 py-1" src="~/assets/tw.png" /></a><span>|</span>
+            <a href="/"><img class="px-2 py-1" src="~/assets/in.png" /></a>
+          </section>
+        </section>
         </div>
       </div>
       <div class="flex justify-center">
