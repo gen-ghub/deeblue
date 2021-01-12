@@ -29,6 +29,88 @@
         </div>
       </section>
     </section>
+    <section>
+      <div class="center">
+        <div>
+          <p class="txt-center">OUTDOOR</p>
+          <h1 class="title">生ビールサーバー出張レンタル</h1>
+        </div>
+      </div>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/biru.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1>生ビールサーバー出張レンタル</h1>
+          <p>
+            会社、レンタルスペース、自宅の他、<span class="new-line"><br /></span>キャンプ場や公園など屋外でも<br />
+            電源不要でどこでもキンキンに冷えた<span class="new-line"><br /></span>樽生ビールサーバーをお届けするサービス。<br /><span class="new-line"><br /></span>
+            懇親会や町のお祭り、<span class="new-line"><br /></span>クリスマスや忘年会など様々なシーンで利用可能。
+          </p>
+            <a class="btn" href="https://beerdeli.jp/">　 ビールデリ 　</a>
+        </div>
+      </section>
+    </section>
+    <section>
+      <div class="center">
+        <div>
+          <p class="txt-center">OUTDOOR</p>
+          <h1 class="title">公園バーベキュー管理</h1>
+        </div>
+      </div>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/camp.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1>公園バーベキュー管理</h1>
+            <p class="pc-text2">
+              滋賀県大津市、琵琶湖のほとりの<span class="new-line"><br /></span>大津市なぎさ公園の運営管理を
+              大津市公園緑地協会より<br />指定委託運営業者として行っております。<span class="new-line"><br /></span><span class="new-line"><br /></span>バーベキュー＆アウトドア用品レンタルに、
+              <br />SUPなどウォーターア
+              クティビティーとしての<span class="new-line"><br /></span>レンタルも行っております。<span class="new-line"><br /></span><span class="new-line"><br /></span>今後は<span class="old-line"><br /></span>
+              キャンプ場としての運営も企画中。
+            </p>
+            <p class="phone-text2">
+            滋賀県大津市、琵琶湖のほとりの<br />大津市なぎさ公園の運営管理を<br />
+              大津市公園緑地協会より<br />指定委託運営業者として行っております。<br /><br />バーベキュー＆アウトドア用品レンタルに、<br />
+              SUPなどウォーターアクティビティーとしての<br />レンタルも行っております。<br /><br />
+              今後はキャンプ場としての運営も企画中。
+          </p>
+            <a class="btn" href="/">なぎさ公園バーベキュー場</a>
+        </div>
+      </section>
+    </section>
+    <section>
+      <div class="center">
+        <div>
+          <p class="txt-center">EVENT</p>
+          <h1 class="title">イベント事業</h1>
+        </div>
+      </div>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/a.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1 class="mob-title">フラッシュモブ・ダンス企画演出・撮影代行</h1>
+          <p class="pc-text">
+            結婚式をより盛り上げるサービス。
+            余興や演出企画代行としてダンスを生かしてフラッシュモブなど、<br />様々な演出で結婚式や披露宴、二次会、プロポーズを盛り上げるお手伝い。<br />
+            結婚式に関わる撮影代行や、企業の商品プロモーション撮影代行も行う。
+          </p>
+          <p class="phone-text">
+            結婚式をより盛り上げるサービス。<br /><br />
+            余興や演出企画代行として<br />ダンスを生かしてフラッシュモブなど、<br />様々な演出で結婚式や披露宴、二次会、<br />プロポーズを盛り上げるお手伝い。<br /><br />
+            結婚式に関わる撮影代行や、<br />企業の商品プロモーション撮影代行も行う。
+          </p>
+            <a class="btn" href="flashmob.biz">　　ゼロモブ　　</a>
+        </div>
+      </section>
+    </section>
   </div>
 </template>
 
@@ -36,7 +118,12 @@
 .new-line{
   display: none;
 }
-
+.phone-text{
+  display: none;
+}
+.phone-text2{
+    display: none;
+  }
 .center {
   display: flex;
   justify-content: center;
@@ -88,6 +175,22 @@
     object-fit: cover;
     margin-left: 3vw;
   }
+  .image-color2{
+    margin-top: 17vh;
+    height: 50vh;
+    width: 30vw;
+    background-color: #022444;
+  }
+
+  .image-size2 {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    height: 60vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 3vw;
+  }
 }
 
 .item-wrapper {
@@ -104,6 +207,10 @@
   p {
     line-height: 40px;
     margin-bottom: 8vh;
+  }
+  .park-txt{
+    margin-bottom: 1vh;
+    padding: 0;
   }
   .btn2{
     margin-left: 50px;
@@ -165,10 +272,20 @@
     .btn2{
       margin-left: 50px;
     }
+    .mob-title{
+      font-size: 4vw;
+    }
   }
   }
 
 @media screen and (max-width: 425px) {
+  .pc-text{
+    display: none;
+  }
+  .phone-text{
+  display: block;
+  padding: 0;
+  }
   .project-title {
   height: 18vh;
     h1 {
@@ -217,6 +334,9 @@
   .new-line{
   display: inline;
 }
+.old-line{
+  display: none;
+}
   .explanation-wrapper {
   p {
     margin: 0 10vw;
@@ -233,4 +353,14 @@
   font-size: 10px;
 }
 }
+
+@media screen and (max-width: 320px) {
+  .pc-text2{
+    display: none;
+  }
+  .phone-text2{
+    display: block;
+  }
+}
 </style>
+

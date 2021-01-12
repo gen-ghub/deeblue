@@ -1,6 +1,6 @@
 <template>
     <footer>
-      <div class="grid grid-cols-6 gap-4 pt-20 pb-10">
+      <div class="grid grid-cols-6 gap-4 pt-20 pb-10 phone-wrapper">
         <div class="col-start-2 col-span-4 flex justify-evenly">
           <div>
             <ul>
@@ -21,9 +21,9 @@
           <section>
           <h1 class="text-xl font-thin tracking-widest">SNS</h1>
           <section class="flex">
-            <a href="/"><img class="px-2 py-1" src="~/assets/f.png" /></a><span>|</span>
-            <a href="/"><img class="px-2 py-1" src="~/assets/tw.png" /></a><span>|</span>
-            <a href="/"><img class="px-2 py-1" src="~/assets/in.png" /></a>
+            <a href="/"><img class="px-2 py-1 footer-img" src="~/assets/f.png" /></a><span>|</span>
+            <a href="/"><img class="px-2 py-1 footer-img" src="~/assets/tw.png" /></a><span>|</span>
+            <a href="/"><img class="px-2 py-1 footer-img" src="~/assets/in.png" /></a>
           </section>
         </section>
         </div>
@@ -48,5 +48,28 @@ footer{
 }
 li {
   padding-bottom: 2vh;
+}
+
+@media screen and (max-width: 425px) {
+  footer{
+    .phone-wrapper{
+      padding-top: 2vh;
+    }
+    li{
+      font-size: 10px;
+      padding-bottom: 0;
+    }
+    h1{
+      font-size: 10px;
+    }
+    .footer-img{
+      height: 20px;
+      width: 20px;
+      object-fit: cover;
+    }
+    .copyright{
+      font-size: small;
+    }
+  }
 }
 </style>
