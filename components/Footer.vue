@@ -5,7 +5,7 @@
           <div>
             <ul>
               <li><router-link to="/">トップページ</router-link></li>
-              <li><nuxt-link class="tracking-widest font-thin " to="/Link01">事業内容</nuxt-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Link01a">事業内容</nuxt-link></li>
               <li><nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link></li>
               <li><nuxt-link class="tracking-widest font-thin " to="/Contact">お問い合わせ</nuxt-link></li>
             </ul>
