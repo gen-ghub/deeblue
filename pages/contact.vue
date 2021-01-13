@@ -2,33 +2,42 @@
   <section class="contact-container border-b-2">
     <div class="flex justify-center ">
       <template v-if="!finished">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent>
-          <p class="flex flex-col text-2xl mb-6">
+        <validation-observer class="from-wrapper" ref="observer" v-slot="{ invalid, validated }" tag="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent>
+          <p class="flex flex-col text-2xl">
             <label class="text-white pb-2">
               お名前
             </label>
-              <input class="rounded" v-model="form.name" type="text" name="name" />
+              <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
+                <input class="contact-input" type="text" id="username" name="username" v-model="username" autocomplete="name">
+                <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
+              </validation-provider>
           </p>
-          <p class="flex flex-col text-2xl mb-6">
+          <p class="flex flex-col text-2xl ">
             <label class="text-white pb-2">
               メールアドレス
             </label>
-              <input class="rounded" v-model="form.email" type="email" name="email" />
+              <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
+                <input class="contact-input" type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
+                <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
+              </validation-provider>
           </p>
-          <p class="flex flex-col text-2xl mb-8">
+          <p class="flex flex-col text-2xl mb-10">
             <label class="text-white pb-2">
               お問い合わせ内容
             </label>
-              <textarea class="rounded h-40" id="form-content" v-model="form.content" name="content" />
+              <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
+                <textarea class="contact-textarea" id="message" name="message" v-model="message"></textarea>
+                <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
+              </validation-provider>
           </p>
           <div class="" v-show="false">
             <label for="message">スパムでない場合は空欄</label>
             <input type="text" name="bot-field" v-model="botField"/>
           </div>
-          <p class="flex flex-col text-2xl">
-            <button class="rounded text-white border border-light-blue-500 border-opacity-75 py-2  hover:bg-blue-900 " @click="handleSubmit" v-text="'送信'" />
+          <p class="flex justify-center text-2xl">
+            <button class="btn rounded text-white border border-light-blue-500 border-opacity-75 py-2 hover:bg-blue-900 " type="submit" :disabled="invalid || !validated" @click="handleSubmit" v-text="'送信'" />
           </p>
-        </form>
+        </validation-observer>
       </template>
       <template v-else>
         <div class="text-4xl text-white p-20">
@@ -85,10 +94,26 @@ export default {
 <style>
 .contact-container {
   padding-top: 20vh;
-  height: 92vh;
+  padding-bottom: 10vh;
   background-color:#022444 ;
 }
 p{
   padding: 10px;
+}
+.from-wrapper{
+  margin: auto;
+}
+.contact-input{
+  width: 20vw;
+}
+.contact-textarea{
+  width: 30vw;
+  height: 20vh;
+}
+.p-contact_error{
+  font-size: 16px;
+}
+.btn{
+  width: 10vw;
 }
 </style>

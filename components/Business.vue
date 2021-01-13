@@ -3,7 +3,7 @@
     <div class="">
       <section class="m-auto w-4/5">
         <h2 class="flex flex-wrap content-center justify-center h-40 text-2xl">
-          事業内容
+          事業内容（配置構想中）
         </h2>
       </section>
       <section class="">
