@@ -2,7 +2,7 @@
   <section class="contact-container border-b-2">
     <div class="flex justify-center ">
       <template v-if="!finished">
-        <form name="contact" method="POST" data-netlify="true" @submit.prevent>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent>
           <p class="flex flex-col text-2xl mb-6">
             <label class="text-white pb-2">
               お名前
