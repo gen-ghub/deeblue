@@ -30,12 +30,12 @@
       </section>
     </section>
     <section>
-      <div class="center">
+      <!-- <div class="center">
         <div>
           <p class="txt-center">OUTDOOR</p>
           <h1 class="title">生ビールサーバー出張レンタル</h1>
         </div>
-      </div>
+      </div> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/biru.jpg" />
@@ -53,12 +53,12 @@
       </section>
     </section>
     <section>
-      <div class="center">
+      <!-- <div class="center">
         <div>
           <p class="txt-center">OUTDOOR</p>
           <h1 class="title">公園バーベキュー管理</h1>
         </div>
-      </div>
+      </div> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/camp.jpg" />
@@ -161,8 +161,8 @@
   width: 50%;
   .image-color{
     margin-top: 17vh;
-    height: 50vh;
-    width: 30vw;
+    height: 60vh;
+    width: 40vw;
     background-color: #022444;
   }
 
@@ -177,8 +177,8 @@
   }
   .image-color2{
     margin-top: 17vh;
-    height: 50vh;
-    width: 30vw;
+    height: 60vh;
+    width: 40vw;
     background-color: #022444;
   }
 
@@ -249,8 +249,8 @@
     .image-color{
       margin-top: 12vh;
       margin-left: 5vw;
-      height: 40vh;
-      width: 70vw;
+      height: 50vh;
+      width: 80vw;
     }
 
     .image-size {
@@ -303,8 +303,8 @@
     .image-color{
       margin-top: 6vh;
       margin-left: 5vw;
-      height: 25vh;
-      width: 70vw;
+      height: 30vh;
+      width: 80vw;
     }
     .image-size {
       bottom: 2.5vh;
