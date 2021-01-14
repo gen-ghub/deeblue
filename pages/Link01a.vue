@@ -4,12 +4,6 @@
       <h1>事業内容一覧</h1>
     </div>
     <section>
-      <div class="center">
-        <div>
-          <p class="txt-center">OUTDOOR</p>
-          <h1 class="title">アウトドア用品レンタル事業</h1>
-        </div>
-      </div>
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/bbq1.jpg" />
@@ -30,12 +24,6 @@
       </section>
     </section>
     <section>
-      <!-- <div class="center">
-        <div>
-          <p class="txt-center">OUTDOOR</p>
-          <h1 class="title">生ビールサーバー出張レンタル</h1>
-        </div>
-      </div> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/biru.jpg" />
@@ -53,12 +41,6 @@
       </section>
     </section>
     <section>
-      <!-- <div class="center">
-        <div>
-          <p class="txt-center">OUTDOOR</p>
-          <h1 class="title">公園バーベキュー管理</h1>
-        </div>
-      </div> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/camp.jpg" />
@@ -84,12 +66,6 @@
       </section>
     </section>
     <section>
-      <div class="center">
-        <div>
-          <p class="txt-center">EVENT</p>
-          <h1 class="title">イベント事業</h1>
-        </div>
-      </div>
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/a.jpg" />

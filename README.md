@@ -1,6 +1,5 @@
 # deeblue
-
-コーポ―レートサイトの作成を依頼を受け作成しました。
+アウトドア用品レンタル事業、イベント事業をされているコーポレートサイト。
 
 
 <br>
@@ -19,7 +18,7 @@
 - Netlify
 - tailwindcss 3.1.0
 - hooper 0.3.4
-
+- vee-validate 3.4.5
 
 ## Build Setup
 
