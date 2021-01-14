@@ -71,42 +71,44 @@ header.scroll-nav {
 
 @media screen and (max-width: 1199px) {
   /* スクリーンサイズが1199px以下の場合に適用 */
-  header {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-    header.scroll-nav {
-      padding-top: 1.2rem;
-      padding-bottom: 0.7rem;
-    }
-  }
+  // header {
+  //   padding-top: 2rem;
+  //   padding-bottom: 1.5rem;
+  //   header.scroll-nav {
+  //     padding-top: 1.2rem;
+  //     padding-bottom: 0.7rem;
+  //   }
+  // }
 }
 @media screen and (max-width: 767px) {
   header {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    h1 {
-      font-size: 3vw;
-    }
-    header.scroll-nav {
-      padding-top: 0.4rem;
-      padding-bottom: 0.2rem;
-    }
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
   }
+  header.scroll-nav {
+      padding-top: 0.9rem;
+      padding-bottom: 0.7rem;
+    }
 }
 @media screen and (max-width: 425px) {
   .test {
     display: none;
   }
-  header {
-    padding-top: 0.5rem;
-    h1 {
-      font-size: 3vw;
+    header {
+    padding-top: 0.8rem;
+    padding-bottom: 0.6rem;
+    h1{
+      font-size: 16px;
     }
+
   }
   header.scroll-nav {
+      padding-top: 0.6rem;
+      padding-bottom: 0.4rem;
+      h1{
+        font-size: 14px;
+      }
     border-bottom: 1px solid #022444;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-  }
+    }
 }
 </style>
