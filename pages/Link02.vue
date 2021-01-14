@@ -2,60 +2,88 @@
   <div>
     <section class="business">
       <img class="pt-2" src="~/assets/link2.jpg" />
-      <div class="grid grid-cols-12 pt-24 text-white">
-        <section class="col-start-2 col-span-4">
+      <div class="flex justify-evenly text-white pt-32 pb-32 main-wrapper">
+        <section class="left-title">
           <p class="">MISSION</p>
-          <h1 class="mt-10 text-4xl font-black leading-relaxed">
-            いつもより少し充実し、<br />
-            幸せだったと思ってもらいたい。
-          </h1>
+          <h1 class="leading-relaxed">人生を楽しむ時代</h1>
         </section>
-        <section class="col-start-7 col-span-5 h-64">
-          <p class="mt-20 font-medium leading-loose">
-            知性は、困難な課題を乗り越えるためにこそ存在する。知性の体現者であり続けることで、<br />
-            世界に存在する多くの課題を解決できると信じています。
+        <section class="right-p">
+          <p class="leading-loose laptop-768-p">
+            多くの体験を通して<span class="laptop-768"><br /></span>
+            本当に楽しかったと思える<br />充実した時間を<span class="laptop-768"
+              ><br /></span
+            >過ごす事のできるサービスを提供したい
           </p>
         </section>
       </div>
     </section>
-    <div class="grid grid-cols-12 pt-20 pb-16">
-      <section class="col-start-2 col-span-4 h-64">
+    <div class="flex justify-evenly pt-32 pb-32 main-wrapper">
+      <section class="left-title">
         <p class="">VISION</p>
-        <h1 class="mt-10 text-4xl font-black leading-relaxed">
-          先生から、<br />
-          教育を変えていく。
-        </h1>
+        <h1 class="leading-relaxed">最高の体験を共有</h1>
       </section>
-      <section class="col-start-7 col-span-5 h-64">
-        <p class="mt-20 font-medium leading-loose">
-          知性は、困難な課題を乗り越えるためにこそ存在する。知性の体現者であり続けることで、<br />
-          世界に存在する多くの課題を解決できると信じています。
+      <section class="right-p">
+        <p class="leading-loose">
+          世界中のあらゆる体験型サービスの中でも<br />引けを取らないサービスを展開する
         </p>
       </section>
     </div>
-    <div class="pc-company grid grid-cols-12 pt-24 pb-20 bg-gray-200">
-      <section class="col-start-2 col-span-10 h-64">
-        <p class="">VALUE</p>
-        <div class="flex space-x-8">
-          <section class="py-12">
-            <h1 class="text-lg font-semibold">先生ファースト</h1>
-            <p class="pt-4 text-sm leading-loose">
-              「先生のためになるか」迷ったら何度でも立ち返ろう。<br />
-              一人ひとりの先生に対峙することが、不可欠な価値を生む。
+    <div class="pt-24 pb-16 bg-gray-200 value-wrapper">
+      <div class="flex justify-evenly">
+        <section class="left-title">
+          <p class="">VALUE</p>
+        </section>
+        <section class="right-p"></section>
+      </div>
+      <section class="pc-company">
+        <div class="flex justify-around ml-16 value-content">
+          <section class="py-12 value-w">
+            <h1 class="text-3xl font-semibold">楽しさを感じてもらいたい</h1>
+            <p class="leading-loose">
+              自ら楽しんで、<span class="laptop-768"><br /></span
+              >その楽しさを<span class="laptop-1024"><br /></span>人に<span
+                class="laptop-768"
+                ><br /></span
+              >伝染させる存在でありたい
             </p>
           </section>
-          <section class="py-12 pl-20">
-            <h1 class="text-lg font-semibold">限界こそ出発点</h1>
-            <p class="pt-4 text-sm leading-loose">
-              自分の限界にぶつかってからが、真の仕事。<br />
-              限界を超えた人間だけが、信頼とチャンスを掴み取る。
+          <section class="py-12 value-w">
+            <h1 class="text-3xl font-semibold">1人の顧客への大切さ</h1>
+            <p class="leading-loose">
+              多くのお客様へのサービスを<br />提供する中でも1つ1つ<span
+                class="laptop-768"
+                ><br /></span
+              >相手の事を<span class="laptop-1024"><br /></span
+              >考えもてなす精神を持つ
             </p>
           </section>
-          <section class="py-12 pl-24">
-            <h1 class="text-lg font-semibold">摩擦が熱になる</h1>
-            <p class="pt-4 text-sm leading-loose">
-              相手を信じ、自分と異なる考えとぶつかり合おう。<br />
-              摩擦が熱を生み、物事を変えるエネルギーになる。
+          <section class="py-12 value-w">
+            <h1 class="text-3xl font-semibold">人と接する大切さ</h1>
+            <p class="leading-loose">
+              従業員と客という単純な関係でなく、<br />人と人としての繋がりを大切にして接する
+            </p>
+          </section>
+        </div>
+      </section>
+      <section class="phone-company">
+        <div class="flex flex-col">
+          <section class="phone-value-section">
+            <h1 class="font-semibold">楽しさを感じてもらいたい</h1>
+            <p class="leading-loose">
+              自ら楽しんで、<br />
+              その楽しさを人に伝染させる存在でありたい
+            </p>
+          </section>
+          <section class="phone-value-section">
+            <h1 class="font-semibold">1人の顧客への大切さ</h1>
+            <p class="leading-loose">
+              多くのお客様へのサービスを<br />提供する中でも1つ1つ<span class="laptop-375"><br /></span>相手の事を考えもてなす精神を持つ
+            </p>
+          </section>
+          <section class="phone-value-section">
+            <h1 class="font-semibold">人と接する大切さ</h1>
+            <p class="leading-loose">
+              従業員と客という単純な関係でなく、<br />人と人としての繋がりを大切にして接する
             </p>
           </section>
         </div>
@@ -96,7 +124,7 @@
       </section>
     </div>
     <div class="phone-company company-wrapper flex justify-center">
-      <section class="company ">
+      <section class="company">
         <div class="flex justify-center">
           <h1 class="">COMPANY</h1>
         </div>
@@ -104,7 +132,7 @@
           <img class="company-img" src="~/assets/user.png" />
         </section>
         <div class="flex justify-center">
-          <div class="company-div ">
+          <div class="company-div">
             <dl class="flex">
               <dt class="">会社名：</dt>
               <dd>株式会社DEEBLUE</dd>
@@ -119,8 +147,10 @@
             </dl>
             <dl class="flex mt-4">
               <dt class="">事業内容：</dt>
-              <dd>アウトドア用品レンタル事業<br>
-              イベント事業</dd>
+              <dd>
+                アウトドア用品レンタル事業<br />
+                イベント事業
+              </dd>
             </dl>
             <dl class="flex mt-4">
               <dt class="">会社所在地：</dt>
@@ -138,12 +168,44 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.laptop-1024 {
+  display: none;
+}
+.laptop-768 {
+  display: none;
+}
+.laptop-375{
+  display: none;
+}
 .phone-company {
   display: none;
 }
+.left-title {
+  width: 40%;
+  p {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 3vw;
+    padding-top: 30px;
+  }
+}
+.right-p {
+  width: 40%;
+  p {
+    padding-top: 10vh;
+    font-size: 20px;
+  }
+}
+.value-w {
+  width: 30vw;
+  padding-right: 2vw;
+  p {
+    padding-top: 3vh;
+  }
+}
 .business {
   background-color: #022444;
-  height: 118vh;
   img {
     height: 70vh;
     width: 100vw;
@@ -160,8 +222,42 @@ export default {}
     object-fit: cover;
   }
 }
+@media screen and (max-width: 1440px) {
+  .value-w {
+    p {
+      font-size: 14px;
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
+  .laptop-1024 {
+    display: inline;
+  }
+  .business {
+    img {
+      height: 50vh;
+    }
+  }
+  .main-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .right-p {
+    width: 40%;
+    p {
+      padding-top: 5vh;
+      font-size: 16px;
+    }
+  }
+  .value-w {
+    h1 {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
   .company-wrapper {
     padding-top: 4rem;
   }
@@ -171,7 +267,7 @@ export default {}
     dt {
       width: 8rem;
     }
-    dl{
+    dl {
       margin-top: 2.5rem;
     }
   }
@@ -183,11 +279,44 @@ export default {}
   }
 }
 @media screen and (max-width: 768px) {
+  .laptop-1024 {
+    display: none;
+  }
+  .laptop-768 {
+    display: inline;
+  }
+  .business {
+    img {
+      height: 40vh;
+    }
+  }
+  .main-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .right-p {
+    width: 40%;
+    p {
+      padding-top: 5vh;
+      font-size: 14px;
+    }
+    .laptop-768-p {
+      padding-top: 2vh;
+    }
+  }
+  .value-w {
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
   .company {
     font-size: 14px;
     margin-top: 2rem;
     .company-div {
-      padding-top: 2rem;
+      padding-top: 0;
     }
     dt {
       width: 6rem;
@@ -204,23 +333,112 @@ export default {}
   }
 }
 @media screen and (max-width: 425px) {
+  .business {
+    img {
+      height: 20vh;
+      padding-top: 2px;
+    }
+  }
+  .main-wrapper {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .left-title {
+    width: 30%;
+    p {
+      font-size: 2vw;
+      padding-top: 20px;
+    }
+    h1 {
+      font-size: 3vw;
+      padding-top: 10px;
+    }
+  }
+  .right-p {
+    width: 50%;
+    p {
+      padding-top: 3vh;
+      font-size: 10px;
+    }
+  }
+  .value-content {
+    margin-left: 0;
+  }
+  .value-wrapper{
+    padding: 20px 0;
+  }
+  .phone-value-section{
+    padding: 20px 0;
+    width: 70%;
+    padding-left: 30px;
+    margin: auto;
+    h1{
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+    p{
+      font-size: 10px;
+    }
+  }
   .pc-company {
     display: none;
   }
+  .company-wrapper {
+    padding-top: 0;
+  }
   .phone-company {
     display: block;
-    .company{
+    .company {
+      margin-top: 0;
       margin-bottom: 8vh;
-      h1{
+      h1 {
         padding: 5vh 0;
         font-size: 30px;
       }
-      .company-img{
+      .company-img {
         height: 20vh;
         width: 60vw;
         object-fit: cover;
       }
+      dl{
+        margin-top: 1rem;
+      }
     }
+  }
+}
+@media screen and (max-width: 375px){
+  .laptop-375{
+    display: inline;
+  }
+  .right-p {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 320px){
+    .left-title {
+    width: 25%;
+    p {
+      font-size: 2vw;
+      padding-top: 20px;
+    }
+    h1 {
+      font-size: 3vw;
+      padding-top: 10px;
+    }
+  }
+  .right-p {
+    width: 60%;
+    p {
+      padding-top: 3vh;
+      font-size: 8px;
+    }
+  }
+  .phone-value-section{
+    padding-left: 20px;
+    h1{
+      font-size: 12px;
+    }
+
   }
 }
 </style>

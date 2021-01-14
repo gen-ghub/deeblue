@@ -91,7 +91,7 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss" scoped>
 .contact-container {
   padding-top: 20vh;
   padding-bottom: 10vh;
