@@ -47,7 +47,7 @@
           <div class="image-color"></div>
         </div>
         <div class="explanation-wrapper">
-          <h1>公園バーベキュー管理</h1>
+          <h1>公園バーベキュー場運営管理</h1>
             <p class="pc-text2">
               滋賀県大津市、琵琶湖のほとりの<span class="new-line"><br /></span>大津市なぎさ公園の運営管理を
               大津市公園緑地協会より<br />指定委託運営業者として行っております。<span class="new-line"><br /></span><span class="new-line"><br /></span>バーベキュー＆アウトドア用品レンタルに、
@@ -61,7 +61,7 @@
               SUPなどウォーターアクティビティーとしての<br />レンタルも行っております。<br /><br />
               今後はキャンプ場としての運営も企画中。
           </p>
-            <a class="btn" href="/">なぎさ公園バーベキュー場</a>
+            <a class="btn" href="/">　　 公園管理 　　</a>
         </div>
       </section>
     </section>
