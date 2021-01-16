@@ -40,8 +40,10 @@
         </validation-observer>
       </template>
       <template v-else>
-        <div class="text-4xl text-white p-20">
-          <p v-text="'お問い合わせ頂きありがとうございました。'" />
+        <div class="text-4xl text-white p-20 contact-message">
+          <p class="pc-message" v-text="'お問い合わせ頂きありがとうございました。'" />
+          <p class="mobile-message" v-text="'お問い合わせ頂き'" />
+          <p class="mobile-message" v-text="'ありがとうございました。'" />
           <div class="flex justify-center ">
             <nuxt-link class="rounded text-white mt-20 py-2 px-20 hover:bg-blue-900" to="/" v-text="'TOPへ'" />
           </div>
@@ -92,6 +94,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.mobile-message{
+  display: none;
+}
 .contact-container {
   padding-top: 20vh;
   padding-bottom: 10vh;
@@ -104,16 +109,77 @@ p{
   margin: auto;
 }
 .contact-input{
-  width: 20vw;
+  width: 400px;
 }
 .contact-textarea{
-  width: 30vw;
-  height: 20vh;
+  width: 600px;
+  height: 30vh;
 }
 .p-contact_error{
   font-size: 16px;
 }
 .btn{
-  width: 10vw;
+  width: 150px;
+}
+@media screen and (max-width: 768px){
+.contact-message{
+  font-size: 25px;
+}
+}
+@media screen and (max-width: 767px){
+  .contact-input{
+  width: 300px;
+}
+.contact-textarea{
+  width: 400px;
+  height: 30vh;
+}
+}
+@media screen and (max-width: 425px){
+  .mobile-message{
+    display: block;
+    padding: 0;
+  }
+  .pc-message{
+    display: none;
+  }
+  .contact-input{
+  width: 80%;
+}
+.contact-container{
+  height: 100%;
+}
+.contact-textarea{
+  width: 100%;
+  height: 30vh;
+}
+.p-contact_error{
+  font-size: 12px;
+}
+.btn{
+  width: 90px;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.contact-message{
+  font-size: 20px;
+  padding-right: 0;
+  padding-left: 0;
+  div a{
+    padding: 0;
+  }
+}
+}
+@media screen and (max-width: 320px){
+  .contact-input{
+  width: 70%;
+}
+.contact-textarea{
+  width: 90%;
+  height: 30vh;
+}
+.p-contact_error{
+  font-size: 10px;
+}
 }
 </style>
