@@ -79,5 +79,22 @@ export default {
   }
 }
 
+@media screen and (max-width: 425px) {
+  .summary-right p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .summary-right p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .summary-right p{
+    font-size: 12px;
+  }
+}
 </style>
 
