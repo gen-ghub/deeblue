@@ -6,7 +6,7 @@
           SERVICE
         </h2>
       </section>
-      <section class="test">
+      <section class="">
         <div class="grid grid-cols-4">
           <div class="flex flex-wrap content-center justify-center">
             <section>
@@ -78,12 +78,53 @@ export default {}
 .itme {
   background-color: white;
 }
+img{
+  object-fit: cover;
+}
 .btn-h1{
   padding: 8px 20px;
 }
+@media screen and (max-width: 1024px){
+.grid-cols-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.itme {
+  margin: 20px;
+}
+img{
+  height: 18rem;
+  width: 20rem;
+}
+}
 @media screen and (max-width: 767px){
-.test{
-  display: none;
+.grid-cols-4 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.itme {
+  margin: 20px;
+}
+img{
+  height: 18rem;
+  width: 20rem;
+}
+}
+@media screen and (max-width: 425px){
+img{
+  height: 16rem;
+  width: 18rem;
+}
+}
+@media screen and (max-width: 375px){
+img{
+  height: 12rem;
+  width: 16rem;
+}
+}
+@media screen and (max-width: 320px){
+img{
+  height: 10rem;
+  width: 14rem;
 }
 }
 </style>
+
