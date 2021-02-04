@@ -8,7 +8,7 @@
               お名前
             </label>
               <validation-provider v-slot="{ errors }" rules="required|max:100" name="お名前">
-                <input class="contact-input" type="text" id="username" name="username" v-model="username" autocomplete="name">
+                <input class="contact-input" type="text" id="name" name="name" v-model="name" autocomplete="name">
                 <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
               </validation-provider>
           </p>
@@ -17,7 +17,7 @@
               メールアドレス
             </label>
               <validation-provider v-slot="{ errors }" rules="required|email|max:256" name="メールアドレス">
-                <input class="contact-input" type="text" id="useremail" name="useremail" v-model="useremail" autocomplete="email">
+                <input class="contact-input" type="text" id="email" name="email" v-model="useremail" autocomplete="email">
                 <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
               </validation-provider>
           </p>
@@ -60,7 +60,7 @@ export default {
       form: {
         name: '',
         email: '',
-        content: ''
+        message: ''
       },
       finished: false
     }

@@ -4,6 +4,7 @@
       <h1>事業内容一覧</h1>
     </div>
     <section>
+      <!-- <breadcrumb class="" :breadcrumbs="breadcrumbs" /> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/bbq1.jpg" />
@@ -89,6 +90,31 @@
     </section>
   </div>
 </template>
+
+
+
+<script>
+import Breadcrumb from '~/components/Breadcrumb.vue'
+
+export default {
+  computed: {
+    breadcrumbs: function() {
+      return {
+        data: [
+          {
+            name: 'トップページ',
+            path: '/'
+          },
+          {
+            name: '事業内容',
+          }
+        ]
+      }
+    }
+  }
+}
+</script>
+
 
 <style lang="scss" scoped>
 .new-line{

@@ -24,17 +24,26 @@
             >
           </li>
         </ul>
-        <button class="mobile-menu-icon"
-    onclick="document.querySelector('body').classList.toggle('open');" id="menu-open" v-on:click="flag = !flag">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <button
+          class="mobile-menu-icon"
+          onclick="document.querySelector('body').classList.toggle('open');"
+          id="menu-open"
+          v-on:click="flag = !flag"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div id="menu-bg" :class="{ open: flag }" v-on:click="flag = !flag">
           <nav id="menu-body" :class="{ open: flag }">
             <ul>
               <li v-for="menu in menus" :key="menu.title" class="menu-list">
-                <nuxt-link :to="menu.href" v-html="menu.title" class="menu-link" onclick="document.querySelector('body').classList.toggle('open');"></nuxt-link>
+                <nuxt-link
+                  :to="menu.href"
+                  v-html="menu.title"
+                  class="menu-link"
+                  onclick="document.querySelector('body').classList.toggle('open');"
+                ></nuxt-link>
               </li>
             </ul>
           </nav>
@@ -60,7 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#menu-open{
+#menu-open {
   display: none;
 }
 header {
@@ -79,7 +88,7 @@ header {
   .nav-ul {
     font-size: 26px;
     height: 100%;
-    padding-right:3vw;
+    padding-right: 3vw;
     .nav-li {
       margin-left: 2vw;
       height: 100%;
@@ -133,67 +142,66 @@ header.scroll-nav {
   &.open {
     transform: translateX(0%);
   }
-  .menu-list{
+  .menu-list {
     margin-bottom: 10px;
-    .menu-link{
+    .menu-link {
       font-size: 30px;
-      color:#fff;
+      color: #fff;
     }
   }
 }
 
 @media screen and (max-width: 800px) {
-      .test {
+  .test {
     display: none;
   }
-  #menu-open{
-  display: inline;
-}
-.mobile-menu-icon {
+  #menu-open {
+    display: inline;
+  }
+  .mobile-menu-icon {
     background-color: unset;
     border: none;
     outline: none !important;
     cursor: pointer;
 
     & > span {
-        background-color: Black;
-        width: 40px;
-        height: 3px;
-        display: block;
-        margin-bottom: 9px;
-        transition: transform 0.7s;
+      background-color: Black;
+      width: 40px;
+      height: 3px;
+      display: block;
+      margin-bottom: 9px;
+      transition: transform 0.7s;
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-}
+  }
 
-.open {
+  .open {
     background-color: Black;
 
     & .mobile-menu-icon {
-        & > span {
-            background-color: White;
+      & > span {
+        background-color: White;
 
-            &:nth-child(1) {
-                transition-delay: 70ms;
-                transform: translateY(12px) rotate(135deg);
-            }
-            &:nth-child(2) {
-                transition-delay: 0s;
-                transform:  translateX(-18px) scaleX(0);
-            }
-            &:nth-child(3) {
-                transition-delay: 140ms;
-                transform: translateY(-12px) rotate(-135deg);
-            }
+        &:nth-child(1) {
+          transition-delay: 70ms;
+          transform: translateY(12px) rotate(135deg);
         }
+        &:nth-child(2) {
+          transition-delay: 0s;
+          transform: translateX(-18px) scaleX(0);
+        }
+        &:nth-child(3) {
+          transition-delay: 140ms;
+          transform: translateY(-12px) rotate(-135deg);
+        }
+      }
     }
-}
+  }
 }
 @media screen and (max-width: 767px) {
-
   header {
     padding-top: 1.2rem;
     padding-bottom: 1rem;
@@ -222,17 +230,17 @@ header.scroll-nav {
     border-bottom: 1px solid #022444;
   }
   #menu-open {
-  top: 4vw;
-  right: 5vw;
-}
-#menu-body {
-  width: 63%;
-  .menu-list{
-    margin-bottom: 10px;
-    .menu-link{
-      font-size: 22px;
+    top: 4vw;
+    right: 5vw;
+  }
+  #menu-body {
+    width: 63%;
+    .menu-list {
+      margin-bottom: 10px;
+      .menu-link {
+        font-size: 22px;
+      }
     }
   }
-}
 }
 </style>
