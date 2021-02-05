@@ -26,7 +26,7 @@
               お問い合わせ内容
             </label>
               <validation-provider v-slot="{ errors }" rules="required|max:1000" name="お問い合わせ内容">
-                <textarea class="contact-textarea" id="message" name="message" v-model="message"></textarea>
+                <textarea class="contact-textarea" id="contact" name="contact" v-model="contact"></textarea>
                 <p v-show="errors.length" class="p-contact_error text-white">{{ errors[0] }}</p>
               </validation-provider>
           </p>
@@ -60,7 +60,7 @@ export default {
       form: {
         name: '',
         email: '',
-        message: ''
+        contact: ''
       },
       finished: false
     }
@@ -94,6 +94,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.contact-message{
+  height: 47vh;
+}
 .mobile-message{
   display: none;
 }
