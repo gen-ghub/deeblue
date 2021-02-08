@@ -48,6 +48,9 @@
                   onclick="document.querySelector('body').classList.toggle('open');"
                 ></nuxt-link>
               </li>
+              <li class="menu-list">
+                <a class="menu-link" href="https://bbqdeli.jp/contact/">お問い合わせ</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -62,9 +65,9 @@ export default {
     return {
       flag: false,
       menus: [
-        { public: true, href: '/Link01', title: '事業内容' },
-        { public: true, href: '/Link02', title: '企業情報' },
-        { public: false, href: "https://bbqdeli.jp/contact/", title: 'お問い合わせ' },
+        { href: '/Link01', title: '事業内容' },
+        { href: '/Link02', title: '企業情報' },
+        { href: '/link03', title: '採用情報' },
       ],
     }
   },
