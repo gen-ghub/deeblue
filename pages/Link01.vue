@@ -1,56 +1,374 @@
 <template>
-  <div class="max-w">
-    <div>
-      <img class="link-img" src="~/assets/link1.jpg" />
+  <div class="font-serif">
+    <div class="project-title center">
+      <h1>事業内容一覧</h1>
     </div>
-    <BusinessTitle />
-    <BusinessItem />
-    <section class="mt-40 h-full flex justify-center contact">
-        <nuxt-link to="/Contact" class="block w-full flex justify-center m-2">
-          <div>
-            <h1 class="pt-32 pb-10">お問い合わせはこちらから</h1>
-            <h3 class="pt-8 pb-32">　　　　Contact</h3>
-          </div>
-        </nuxt-link>
+    <section>
+      <!-- <breadcrumb class="" :breadcrumbs="breadcrumbs" /> -->
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/bbq1.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1>BBQ出張レンタル</h1>
+          <p>
+            関東・関西2拠点の幅広いエリアでBBQ・アウトドア用品の出張レンタルサービス。
+            お客様の希望する場所・時間・内容で要望に応じた機材や食材をお届け。
+            友人、会社、家族、様々なお客様に対応し手ぶらでBBQを楽しめるサービス。
+          </p>
+          <a class="btn" href="http://bbqdeli.jp/">バーベキューデリ</a>
+          <a class="btn btn2" href="http://www.bbq-ranger.com"
+            >　バーベキュー隊　</a
+          >
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/biru.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1>生ビールサーバー出張レンタル</h1>
+          <p>
+            会社、レンタルスペース、自宅の他、キャンプ場や公園など屋外でも
+            電源不要でどこでもキンキンに冷えた樽生ビールサーバーをお届けするサービス。
+            懇親会や町のお祭り、クリスマスや忘年会など様々なシーンで利用可能。
+          </p>
+          <a class="btn" href="https://beerdeli.jp/">　 ビールデリ 　</a>
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/camp.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1>公園バーベキュー場運営管理</h1>
+          <p class="pc-text2">
+            滋賀県大津市、琵琶湖のほとりの大津市なぎさ公園の運営管理を
+            大津市公園緑地協会より指定委託運営業者として行っております。バーベキュー＆アウトドア用品レンタルに、
+            SUPなどウォーターア
+            クティビティーとしてのレンタルも行っております。今後は
+            キャンプ場としての運営も企画中。
+          </p>
+          <p class="phone-text2">
+            滋賀県大津市、琵琶湖のほとりの<br />大津市なぎさ公園の運営管理を<br />
+            大津市公園緑地協会より<br />指定委託運営業者として行っております。<br /><br />バーベキュー＆アウトドア用品レンタルに、<br />
+            SUPなどウォーターアクティビティーとしての<br />レンタルも行っております。<br /><br />
+            今後はキャンプ場としての運営も企画中。
+          </p>
+          <a
+            class="btn"
+            href="https://www.bbq-ranger.com/blog/2020/04/20/%e5%a4%a7%e6%b4%a5%e6%b9%96%e5%b2%b8%e3%81%aa%e3%81%8e%e3%81%95%e5%85%ac%e5%9c%92%e3%80%802020%e5%b9%b4%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%a6%e3%82%a3%e3%83%bc%e3%82%af%e6%9c%9f/"
+            >　　 公園管理 　　</a
+          >
+        </div>
+      </section>
+    </section>
+    <section>
+      <section class="item-wrapper">
+        <div class="image-wrapper">
+          <img class="image-size" src="~/assets/a.jpg" />
+          <div class="image-color"></div>
+        </div>
+        <div class="explanation-wrapper">
+          <h1 class="mob-title">フラッシュモブ・ダンス企画演出・撮影代行</h1>
+          <p class="pc-text">
+            結婚式をより盛り上げるサービス。
+            余興や演出企画代行としてダンスを生かしてフラッシュモブなど、様々な演出で結婚式や披露宴、二次会、プロポーズを盛り上げるお手伝い。
+            結婚式に関わる撮影代行や、企業の商品プロモーション撮影代行も行う。
+          </p>
+          <p class="phone-text">
+            結婚式をより盛り上げるサービス。<br /><br />
+            余興や演出企画代行として<br />ダンスを生かしてフラッシュモブなど、<br />様々な演出で結婚式や披露宴、二次会、<br />プロポーズを盛り上げるお手伝い。<br /><br />
+            結婚式に関わる撮影代行や、<br />企業の商品プロモーション撮影代行も行う。
+          </p>
+          <a class="btn" href="http://flashmob.biz">　　ゼロモブ　　</a>
+        </div>
+      </section>
     </section>
   </div>
 </template>
 
 <script>
-import BusinessTitle from '@/components/Link01/BusinessTitle.vue'
-import BusinessItem from '@/components/Link01/BusinessItem.vue'
+import Breadcrumb from '~/components/Breadcrumb.vue'
 
 export default {
-  components: {
-    BusinessTitle,
-    BusinessItem,
+  computed: {
+    breadcrumbs: function () {
+      return {
+        data: [
+          {
+            name: 'トップページ',
+            path: '/',
+          },
+          {
+            name: '事業内容',
+          },
+        ],
+      }
+    },
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>
-.link-img{
-  border-top: 8px solid #022444;
-    height: 70vh;
-    width: 100vw;
-    object-fit: cover;
-  }
-.max-w{
-  max-width:100vw;
+.new-line {
+  display: none;
 }
-.image-size{
-  height: 70vh;
-  width: 60vw;
-  object-fit: cover;
+.phone-text {
+  display: none;
+}
+.phone-text2 {
+  display: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt-center {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10vh;
+  margin-bottom: 10px;
+  color: rgba(#8600009c, 0.8);
+}
+.project-title {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgba(#ccccccb0, 0.7);
+  h1 {
+    color: #022444;
+    font-size: 2vw;
+    font-weight: 100;
+    letter-spacing: 1vw;
+  }
 }
 
-.contact{
-  :hover{
+.title {
+  font-size: 2vw;
+  font-weight: 100;
+  margin-bottom: 10vh;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 50%;
+  .image-color {
+    margin-top: 17vh;
+    height: 60vh;
+    width: 40vw;
     background-color: #022444;
-    color: white;
+  }
+
+  .image-size {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    height: 60vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 3vw;
+  }
+  .image-color2 {
+    margin-top: 17vh;
+    height: 60vh;
+    width: 40vw;
+    background-color: #022444;
+  }
+
+  .image-size2 {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    height: 60vh;
+    width: 40vw;
+    object-fit: cover;
+    margin-left: 3vw;
   }
 }
 
+.item-wrapper {
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  display: flex;
+}
+.explanation-wrapper {
+  margin-top: 8vh;
+  padding: 10vh 0 10vw 0;
+  h1 {
+    font-size: 2vw;
+    margin-bottom: 5vh;
+  }
+  p {
+    line-height: 40px;
+    margin-bottom: 8vh;
+    width: 46vw;
+    // background-color: yellowgreen;
+  }
+  .park-txt {
+    margin-bottom: 1vh;
+    padding: 0;
+  }
+  .btn2 {
+    margin-left: 50px;
+  }
+}
+.btn {
+  border: 1px solid black;
+  padding: 15px 30px;
+  &:hover {
+    background-color: #022444;
+    color: #fff;
+  }
+}
 
+@media screen and (max-width: 1400px) {
+  .explanation-wrapper {
+    p {
+      width: 46vw;
+    }
+    .btn2 {
+      margin-left: 25px;
+    }
+  }
+}
 
+@media screen and (max-width: 1023px) {
+  .item-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image-wrapper {
+    width: 100vw;
+    .image-color {
+      margin-top: 12vh;
+      margin-left: 5vw;
+      height: 50vh;
+      width: 80vw;
+    }
+
+    .image-size {
+      bottom: 5vh;
+      left: 10vw;
+      height: 50vh;
+      width: 80vw;
+      margin-left: 0;
+    }
+  }
+  .explanation-wrapper {
+    padding: 10vh 0 10vw 0;
+    margin: auto;
+    h1 {
+      text-align: center;
+      font-size: 5vw;
+      margin-bottom: 2vh;
+    }
+    p {
+      width: 80vw;
+    }
+    .btn {
+      text-align: center;
+      width: 250px;
+
+    }
+    .mob-title {
+      font-size: 4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pc-text {
+    display: none;
+  }
+  .phone-text {
+    display: block;
+    padding: 0;
+  }
+  .project-title {
+    height: 18vh;
+    h1 {
+      font-size: 4vw;
+    }
+  }
+  .title {
+    margin-bottom: 10vh;
+  }
+  .txt-center {
+    margin-top: 4vh;
+    margin-bottom: 0;
+  }
+  .image-wrapper {
+    .image-color {
+      margin-top: 6vh;
+      margin-left: 5vw;
+      height: 30vh;
+      width: 80vw;
+    }
+    .image-size {
+      bottom: 2.5vh;
+      left: 10vw;
+      height: 30vh;
+      width: 80vw;
+    }
+  }
+  .explanation-wrapper {
+    padding: 5vh 0 10vw 0;
+    p {
+      font-size: 10px;
+      line-height: 30px;
+      margin-bottom: 6vh;
+    }
+    .btn2 {
+      margin-left: 20px;
+    }
+  }
+  .btn {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .new-line {
+    display: inline;
+  }
+  .old-line {
+    display: none;
+  }
+  .explanation-wrapper {
+    p {
+      margin: 0 10vw;
+      font-size: 8px;
+      line-height: 20px;
+      margin-bottom: 6vh;
+    }
+    .btn2 {
+      margin-left: 20px;
+    }
+  }
+  .btn {
+    padding: 10px 15px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pc-text2 {
+    display: none;
+  }
+  .phone-text2 {
+    display: block;
+  }
+}
 </style>

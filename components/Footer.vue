@@ -6,7 +6,7 @@
           <ul class="flex">
             <li class="mr-8"><router-link to="/">トップページ</router-link></li>
             <li class="mr-8">
-              <nuxt-link class="tracking-widest font-thin" to="/Link01a"
+              <nuxt-link class="tracking-widest font-thin" to="/Link01"
                 >事業内容</nuxt-link
               >
             </li>
@@ -16,9 +16,12 @@
               >
             </li>
             <li class="mr-8">
-              <nuxt-link class="tracking-widest font-thin" to="/Contact"
-                >お問い合わせ</nuxt-link
+              <nuxt-link class="tracking-widest font-thin" to="/Link03"
+                >採用情報</nuxt-link
               >
+            </li>
+            <li class="mr-8">
+              <a class="tracking-widest font-thin" href="https://bbqdeli.jp/contact/">お問い合わせ</a>
             </li>
           </ul>
         </div>

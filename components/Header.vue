@@ -9,7 +9,7 @@
       <nav class="header-nav">
         <ul class="test nav-ul flex items-center">
           <li class="nav-li">
-            <nuxt-link class="tracking-widest font-thin" to="/Link01a"
+            <nuxt-link class="tracking-widest font-thin" to="/Link01"
               >事業内容</nuxt-link
             >
           </li>
@@ -19,9 +19,12 @@
             >
           </li>
           <li class="nav-li">
-            <nuxt-link class="tracking-widest font-thin" to="/Contact"
-              >お問い合わせ</nuxt-link
+            <nuxt-link class="tracking-widest font-thin" to="/Link03"
+              >採用情報</nuxt-link
             >
+          </li>
+          <li class="nav-li">
+            <a class="tracking-widest font-thin" href="https://bbqdeli.jp/contact/">お問い合わせ</a>
           </li>
         </ul>
         <button
@@ -59,9 +62,9 @@ export default {
     return {
       flag: false,
       menus: [
-        { public: true, href: '/Link01a', title: '事業内容' },
+        { public: true, href: '/Link01', title: '事業内容' },
         { public: true, href: '/Link02', title: '企業情報' },
-        { public: false, href: '/Contact', title: 'お問い合わせ' },
+        { public: false, href: "https://bbqdeli.jp/contact/", title: 'お問い合わせ' },
       ],
     }
   },

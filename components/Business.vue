@@ -10,9 +10,9 @@
         <div class="grid grid-cols-4">
           <div class="flex flex-wrap content-center justify-center">
             <section>
-              <div class="itme rounded bg-gray-50 p-10 shadow-2xl">
+              <div class="itme rounded bg-gray-50 p-5 shadow-2xl">
                 <div class="flex flex-wrap content-center justify-center mb-8">
-                  <img class="h-56 w-56 rounded" src="~/assets/bbq1.jpg" />
+                  <img class="rounded" src="~/assets/bbq1.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
                   <nuxt-link to="/Link01a" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
@@ -24,9 +24,9 @@
           </div>
           <div class="flex flex-wrap content-center justify-center">
             <section>
-              <div class="itme rounded bg-gray-50 p-10 shadow-2xl">
+              <div class="itme rounded bg-gray-50 p-5 shadow-2xl">
                 <div class="flex flex-wrap content-center justify-center mb-8">
-                  <img class="h-56 w-56 rounded" src="~/assets/biru.jpg" />
+                  <img class=" rounded" src="~/assets/biru.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
                   <nuxt-link to="/Link01a" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
@@ -38,9 +38,9 @@
           </div>
           <div class="flex flex-wrap content-center justify-center">
             <section>
-              <div class="itme rounded bg-gray-50 p-10 shadow-2xl">
+              <div class="itme rounded bg-gray-50 p-5 shadow-2xl">
                 <div class="flex flex-wrap content-center justify-center mb-8">
-                  <img class="h-56 w-56 rounded" src="~/assets/a.jpg" />
+                  <img class=" rounded" src="~/assets/a.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
                   <nuxt-link to="/Link01a" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
@@ -52,9 +52,9 @@
           </div>
           <div class="flex flex-wrap content-center justify-center">
             <section>
-              <div class="itme rounded bg-gray-50 p-10 shadow-2xl">
+              <div class="itme rounded bg-gray-50 p-5 shadow-2xl">
                 <div class="flex flex-wrap content-center justify-center mb-8">
-                    <img class="h-56 w-56 rounded" src="~/assets/camp.jpg" />
+                    <img class=" rounded" src="~/assets/camp.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
                   <nuxt-link to="/Link01a" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
@@ -80,9 +80,17 @@ export default {}
 }
 img{
   object-fit: cover;
+  height: 300px;
+  width: 300px;
 }
 .btn-h1{
   padding: 8px 20px;
+}
+@media screen and (max-width: 1400px){
+img{
+  height: 250px;
+  width: 250px;
+}
 }
 @media screen and (max-width: 1024px){
 .grid-cols-4 {
