@@ -17,10 +17,28 @@
             お客様の希望する場所・時間・内容で要望に応じた機材や食材をお届け。
             友人、会社、家族、様々なお客様に対応し手ぶらでBBQを楽しめるサービス。
           </p>
-          <a class="btn" href="http://bbqdeli.jp/">バーベキューデリ</a>
-          <a class="btn btn2" href="http://www.bbq-ranger.com"
-            >　バーベキュー隊　</a
-          >
+          <div class="laptop-1024">
+            <a class="btn" href="http://bbqdeli.jp/">バーベキューデリ</a>
+            <a class="btn btn2" href="http://www.bbq-ranger.com"
+              >　バーベキュー隊　</a
+            >
+          </div>
+          <div class="laptop-1024">
+          <section class="flex mt-16 project-img-wrapper">
+            <a class="ml-4 project-img-link" href="/"
+              ><img class="project-img" src="~/assets/Twitter2.png"
+            /></a>
+            <a class="ml-4" href="/"
+              ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+            <a class="ml-32" href="/"
+              ><img class="project-img" src="~/assets/Twitter2.png"
+            /></a>
+            <a class="ml-4" href="/"
+              ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+          </section>
+          </div>
         </div>
       </section>
     </section>
@@ -37,7 +55,19 @@
             電源不要でどこでもキンキンに冷えた樽生ビールサーバーをお届けするサービス。
             懇親会や町のお祭り、クリスマスや忘年会など様々なシーンで利用可能。
           </p>
-          <a class="btn" href="https://beerdeli.jp/">　 ビールデリ 　</a>
+          <div class="laptop-1024">
+            <a class="btn" href="https://beerdeli.jp/">　 ビールデリ 　</a>
+          </div>
+          <div class="laptop-1024">
+          <section class="flex mt-16 project-img-wrapper">
+              <a class="ml-4 project-img-link" href="/"
+              ><img class="project-img" src="~/assets/Twitter2.png"
+            /></a>
+            <a class="ml-4" href="/"
+              ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+          </section>
+          </div>
         </div>
       </section>
     </section>
@@ -49,24 +79,30 @@
         </div>
         <div class="explanation-wrapper">
           <h1>公園バーベキュー場運営管理</h1>
-          <p class="pc-text2">
+          <p class="">
             滋賀県大津市、琵琶湖のほとりの大津市なぎさ公園の運営管理を
             大津市公園緑地協会より指定委託運営業者として行っております。バーベキュー＆アウトドア用品レンタルに、
             SUPなどウォーターア
             クティビティーとしてのレンタルも行っております。今後は
             キャンプ場としての運営も企画中。
           </p>
-          <p class="phone-text2">
-            滋賀県大津市、琵琶湖のほとりの<br />大津市なぎさ公園の運営管理を<br />
-            大津市公園緑地協会より<br />指定委託運営業者として行っております。<br /><br />バーベキュー＆アウトドア用品レンタルに、<br />
-            SUPなどウォーターアクティビティーとしての<br />レンタルも行っております。<br /><br />
-            今後はキャンプ場としての運営も企画中。
-          </p>
-          <a
-            class="btn"
-            href="https://www.bbq-ranger.com/blog/2020/04/20/%e5%a4%a7%e6%b4%a5%e6%b9%96%e5%b2%b8%e3%81%aa%e3%81%8e%e3%81%95%e5%85%ac%e5%9c%92%e3%80%802020%e5%b9%b4%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%a6%e3%82%a3%e3%83%bc%e3%82%af%e6%9c%9f/"
-            >　　 公園管理 　　</a
-          >
+          <div class="laptop-1024">
+            <a
+              class="btn"
+              href="https://www.bbq-ranger.com/blog/2020/04/20/%e5%a4%a7%e6%b4%a5%e6%b9%96%e5%b2%b8%e3%81%aa%e3%81%8e%e3%81%95%e5%85%ac%e5%9c%92%e3%80%802020%e5%b9%b4%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%a6%e3%82%a3%e3%83%bc%e3%82%af%e6%9c%9f/"
+              >　　 公園管理 　　</a
+            >
+          </div>
+          <div class="laptop-1024">
+          <section class="flex mt-16 project-img-wrapper">
+            <a class="ml-4 project-img-link" href="/"
+              ><img class="project-img" src="~/assets/Twitter2.png"
+            /></a>
+            <a class="ml-4" href="/"
+              ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+          </section>
+          </div>
         </div>
       </section>
     </section>
@@ -78,17 +114,24 @@
         </div>
         <div class="explanation-wrapper">
           <h1 class="mob-title">フラッシュモブ・ダンス企画演出・撮影代行</h1>
-          <p class="pc-text">
+          <p class="">
             結婚式をより盛り上げるサービス。
             余興や演出企画代行としてダンスを生かしてフラッシュモブなど、様々な演出で結婚式や披露宴、二次会、プロポーズを盛り上げるお手伝い。
             結婚式に関わる撮影代行や、企業の商品プロモーション撮影代行も行う。
           </p>
-          <p class="phone-text">
-            結婚式をより盛り上げるサービス。<br /><br />
-            余興や演出企画代行として<br />ダンスを生かしてフラッシュモブなど、<br />様々な演出で結婚式や披露宴、二次会、<br />プロポーズを盛り上げるお手伝い。<br /><br />
-            結婚式に関わる撮影代行や、<br />企業の商品プロモーション撮影代行も行う。
-          </p>
-          <a class="btn" href="http://flashmob.biz">　　ゼロモブ　　</a>
+          <div class="laptop-1024">
+            <a class="btn" href="http://flashmob.biz">　　ゼロモブ　　</a>
+          </div>
+          <div class="laptop-1024">
+          <section class="flex mt-16 project-img-wrapper">
+              <a class="ml-4 project-img-link" href="/"
+              ><img class="project-img" src="~/assets/Twitter2.png"
+            /></a>
+            <a class="ml-4 " href="/"
+              ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+          </section>
+          </div>
         </div>
       </section>
     </section>
@@ -118,15 +161,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.new-line {
-  display: none;
-}
-.phone-text {
-  display: none;
-}
-.phone-text2 {
-  display: none;
-}
+.project-img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    &:hover {
+    background-color: #b3b3b3b4;
+  }
+  }
 .center {
   display: flex;
   justify-content: center;
@@ -146,7 +188,7 @@ export default {
   background-color: rgba(#ccccccb0, 0.7);
   h1 {
     color: #022444;
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: 100;
     letter-spacing: 1vw;
   }
@@ -162,31 +204,14 @@ export default {
   position: relative;
   width: 50%;
   .image-color {
-    margin-top: 17vh;
+    margin-top: 6vh;
     height: 60vh;
     width: 40vw;
     background-color: #022444;
   }
-
   .image-size {
     position: absolute;
-    bottom: 5vh;
-    left: 0;
-    height: 60vh;
-    width: 40vw;
-    object-fit: cover;
-    margin-left: 3vw;
-  }
-  .image-color2 {
-    margin-top: 17vh;
-    height: 60vh;
-    width: 40vw;
-    background-color: #022444;
-  }
 
-  .image-size2 {
-    position: absolute;
-    bottom: 10vh;
     left: 0;
     height: 60vh;
     width: 40vw;
@@ -196,15 +221,14 @@ export default {
 }
 
 .item-wrapper {
-  margin-top: 10vh;
+  margin-top: 20vh;
   margin-bottom: 20vh;
   display: flex;
 }
 .explanation-wrapper {
-  margin-top: 8vh;
-  padding: 10vh 0 10vw 0;
+  padding-top: 6vh;
   h1 {
-    font-size: 2vw;
+    font-size: 30px;
     margin-bottom: 5vh;
   }
   p {
@@ -239,9 +263,14 @@ export default {
       margin-left: 25px;
     }
   }
+  .image-wrapper {
+    .image-size {
+      left: 0;
+    }
+  }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .item-wrapper {
     margin-top: 0;
     margin-bottom: 0;
@@ -265,13 +294,17 @@ export default {
       margin-left: 0;
     }
   }
+  .laptop-1024 {
+    display: flex;
+    justify-content: center;
+  }
   .explanation-wrapper {
     padding: 10vh 0 10vw 0;
     margin: auto;
     h1 {
       text-align: center;
       font-size: 5vw;
-      margin-bottom: 2vh;
+      margin-bottom: 6vh;
     }
     p {
       width: 80vw;
@@ -279,21 +312,37 @@ export default {
     .btn {
       text-align: center;
       width: 250px;
-
     }
     .mob-title {
       font-size: 4vw;
     }
   }
 }
+@media screen and (max-width: 768px){
+  .project-img-link {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .explanation-wrapper {
+    .btn {
+      padding: 10px 15px;
+      width: 200px;
+      font-size: 16px;
+    }
+  }
+}
 
 @media screen and (max-width: 425px) {
-  .pc-text {
-    display: none;
+  .project-img-wrapper{
+    margin-top: 20px;
+    .project-img {
+    height: 30px;
+    width: 30px;
   }
-  .phone-text {
-    display: block;
-    padding: 0;
+  .ml-32{
+    margin-left: 4rem;
+  }
   }
   .project-title {
     height: 18vh;
@@ -332,20 +381,15 @@ export default {
     .btn2 {
       margin-left: 20px;
     }
-  }
-  .btn {
-    padding: 10px 15px;
-    font-size: 10px;
+    .btn {
+      padding: 10px 15px;
+      font-size: 10px;
+      width: 130px;
+    }
   }
 }
 
 @media screen and (max-width: 375px) {
-  .new-line {
-    display: inline;
-  }
-  .old-line {
-    display: none;
-  }
   .explanation-wrapper {
     p {
       margin: 0 10vw;

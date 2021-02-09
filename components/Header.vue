@@ -24,7 +24,10 @@
             >
           </li>
           <li class="nav-li">
-            <a class="tracking-widest font-thin" href="https://bbqdeli.jp/contact/">お問い合わせ</a>
+            <nuxt-link class="tracking-widest font-thin" to="/contact"
+              >お問い合わせ</nuxt-link
+            >
+            <!-- <a class="tracking-widest font-thin" href="https://bbqdeli.jp/contact/">お問い合わせ</a> -->
           </li>
         </ul>
         <button
@@ -92,7 +95,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   .nav-ul {
-    font-size: 26px;
+    font-size: 20px;
     height: 100%;
     padding-right: 3vw;
     .nav-li {
