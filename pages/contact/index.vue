@@ -13,7 +13,6 @@
       :class="sendingClass"
     >
       <input type="hidden" name="form-name" value="contact" />
-
       <div class="p-contact__item">
         <label for="username">お名前</label>
         <validation-provider
