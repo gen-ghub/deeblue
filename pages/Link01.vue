@@ -25,18 +25,31 @@
           </div>
           <div class="laptop-1024">
           <section class="flex mt-16 project-img-wrapper">
-            <a class="ml-4 project-img-link" href="/"
+            <a class="mobile-link project-img-link" href="https://twitter.com/bbqdeli_ranger?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Abbqdeli_ranger&ref_url=https%3A%2F%2Fbbqdeli.jp%2F"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4" href="/"
+            <a class="ml-4 " href="https://www.facebook.com/bbqdeli/?hc_ref=ARSaTKrKzMNOp6ojOuT-ScrvwEfr_40lmimtDxsQpRWv4-w7K0CALkzvDYaYyBLQKNw&fref=nf&__tn__=kC-R"
+              ><img class="project-img" src="~/assets/facebook.png"
+            /></a>
+            <a class="ml-4 " href="https://www.instagram.com/bbq_deli/?hl=ja"
               ><img class="project-img" src="~/assets/Instagram.png"
             /></a>
-            <a class="ml-32" href="/"
+            <!-- <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/youtube.png"
+            /></a> -->
+
+            <a class="ml-16" href="https://twitter.com/bbqdeli_ranger?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Eprofile%3Abbqdeli_ranger&ref_url=https%3A%2F%2Fbbqdeli.jp%2F"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4" href="/"
+            <a class="ml-4 " href="https://www.facebook.com/bbqdeli/?hc_ref=ARSaTKrKzMNOp6ojOuT-ScrvwEfr_40lmimtDxsQpRWv4-w7K0CALkzvDYaYyBLQKNw&fref=nf&__tn__=kC-R"
+              ><img class="project-img" src="~/assets/facebook.png"
+            /></a>
+            <a class="ml-4 " href="https://www.instagram.com/bbq_deli/?hl=ja"
               ><img class="project-img" src="~/assets/Instagram.png"
             /></a>
+            <!-- <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/youtube.png"
+            /></a> -->
           </section>
           </div>
         </div>
@@ -60,12 +73,18 @@
           </div>
           <div class="laptop-1024">
           <section class="flex mt-16 project-img-wrapper">
-              <a class="ml-4 project-img-link" href="/"
+            <a class="project-img-link" href="#"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4" href="/"
+            <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/facebook.png"
+            /></a>
+            <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/Instagram.png"
             /></a>
+            <!-- <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/youtube.png"
+            /></a> -->
           </section>
           </div>
         </div>
@@ -89,18 +108,24 @@
           <div class="laptop-1024">
             <a
               class="btn"
-              href="https://www.bbq-ranger.com/blog/2020/04/20/%e5%a4%a7%e6%b4%a5%e6%b9%96%e5%b2%b8%e3%81%aa%e3%81%8e%e3%81%95%e5%85%ac%e5%9c%92%e3%80%802020%e5%b9%b4%e3%82%b4%e3%83%bc%e3%83%ab%e3%83%87%e3%83%b3%e3%82%a6%e3%82%a3%e3%83%bc%e3%82%af%e6%9c%9f/"
+              href="https://www.bbq-ranger.com/area/shiga/%e5%a4%a7%e6%b4%a5%e6%b9%96%e5%b2%b8%e3%81%aa%e3%81%8e%e3%81%95%e5%85%ac%e5%9c%92%e3%82%b5%e3%83%b3%e3%82%b7%e3%83%a3%e3%82%a4%e3%83%b3%e3%83%93%e3%83%bc%e3%83%81/"
               >　　 公園管理 　　</a
             >
           </div>
           <div class="laptop-1024">
           <section class="flex mt-16 project-img-wrapper">
-            <a class="ml-4 project-img-link" href="/"
+            <a class="project-img-link" href="#"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4" href="/"
+            <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/facebook.png"
+            /></a>
+            <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/Instagram.png"
             /></a>
+            <!-- <a class="ml-4 " href="#"
+              ><img class="project-img" src="~/assets/youtube.png"
+            /></a> -->
           </section>
           </div>
         </div>
@@ -124,11 +149,17 @@
           </div>
           <div class="laptop-1024">
           <section class="flex mt-16 project-img-wrapper">
-              <a class="ml-4 project-img-link" href="/"
+              <a class="project-img-link" href="https://twitter.com/zeroflashmob"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4 " href="/"
+            <a class="ml-4 " href="https://www.facebook.com/zeroflashmob/"
+              ><img class="project-img" src="~/assets/facebook.png"
+            /></a>
+            <a class="ml-4 " href="https://www.instagram.com/zeroflashmob/"
               ><img class="project-img" src="~/assets/Instagram.png"
+            /></a>
+            <a class="ml-4 " href="https://www.youtube.com/channel/UCpAXMwjpU_2aHV0ATFBQ5NQ"
+              ><img class="project-img" src="~/assets/youtube.png"
             /></a>
           </section>
           </div>
@@ -386,6 +417,12 @@ export default {
       font-size: 10px;
       width: 130px;
     }
+  }
+  .mobile-link{
+    margin-left: 0;
+  }
+  .ml-16{
+    margin-left: 25px;
   }
 }
 
