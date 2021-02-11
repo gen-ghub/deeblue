@@ -73,7 +73,7 @@
           </div>
           <div class="laptop-1024">
           <section class="flex mt-16 project-img-wrapper">
-            <a class="project-img-link" href="#"
+            <!-- <a class="project-img-link" href="#"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
             <a class="ml-4 " href="#"
@@ -81,7 +81,7 @@
             /></a>
             <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/Instagram.png"
-            /></a>
+            /></a> -->
             <!-- <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/youtube.png"
             /></a> -->
@@ -152,9 +152,9 @@
               <a class="project-img-link" href="https://twitter.com/zeroflashmob"
               ><img class="project-img" src="~/assets/Twitter2.png"
             /></a>
-            <a class="ml-4 " href="https://www.facebook.com/zeroflashmob/"
+            <!-- <a class="ml-4 " href="https://www.facebook.com/zeroflashmob/"
               ><img class="project-img" src="~/assets/facebook.png"
-            /></a>
+            /></a> -->
             <a class="ml-4 " href="https://www.instagram.com/zeroflashmob/"
               ><img class="project-img" src="~/assets/Instagram.png"
             /></a>
