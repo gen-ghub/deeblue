@@ -44,7 +44,7 @@
         <input type="text" name="bot-field" v-model="botField"/>
       </div>
       <!-- /.p-contact__item -->
-
+      <p>{{completeMessage}}</p>
       <div class="p-contact__submit">
         <button type="submit" :disabled="invalid || !validated">送信</button>
       </div>
