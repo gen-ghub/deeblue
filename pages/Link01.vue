@@ -7,7 +7,7 @@
       <!-- <breadcrumb class="" :breadcrumbs="breadcrumbs" /> -->
       <section class="item-wrapper">
         <div class="image-wrapper">
-          <img class="image-size" src="~/assets/bbq1.jpg" />
+          <img class="image-size" src="~/assets/bbq.jpeg" />
           <div class="image-color"></div>
         </div>
         <div class="explanation-wrapper">
@@ -32,7 +32,7 @@
               ><img class="project-img" src="~/assets/facebook.png"
             /></a>
             <a class="ml-4 " href="https://www.instagram.com/bbq_deli/?hl=ja"
-              ><img class="project-img" src="~/assets/Instagram.png"
+              ><img class="project-img" src="~/assets/i.png"
             /></a>
             <!-- <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/youtube.png"
@@ -45,7 +45,7 @@
               ><img class="project-img" src="~/assets/facebook.png"
             /></a>
             <a class="ml-4 " href="https://www.instagram.com/bbq_deli/?hl=ja"
-              ><img class="project-img" src="~/assets/Instagram.png"
+              ><img class="project-img" src="~/assets/i.png"
             /></a>
             <!-- <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/youtube.png"
@@ -80,7 +80,7 @@
               ><img class="project-img" src="~/assets/facebook.png"
             /></a>
             <a class="ml-4 " href="#"
-              ><img class="project-img" src="~/assets/Instagram.png"
+              ><img class="project-img" src="~/assets/i.png"
             /></a> -->
             <!-- <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/youtube.png"
@@ -121,7 +121,7 @@
               ><img class="project-img" src="~/assets/facebook.png"
             /></a>
             <a class="ml-4 " href="#"
-              ><img class="project-img" src="~/assets/Instagram.png"
+              ><img class="project-img" src="~/assets/i.png"
             /></a>
             <!-- <a class="ml-4 " href="#"
               ><img class="project-img" src="~/assets/youtube.png"
@@ -156,7 +156,7 @@
               ><img class="project-img" src="~/assets/facebook.png"
             /></a> -->
             <a class="ml-4 " href="https://www.instagram.com/zeroflashmob/"
-              ><img class="project-img" src="~/assets/Instagram.png"
+              ><img class="project-img" src="~/assets/i.png"
             /></a>
             <a class="ml-4 " href="https://www.youtube.com/channel/UCpAXMwjpU_2aHV0ATFBQ5NQ"
               ><img class="project-img" src="~/assets/youtube.png"

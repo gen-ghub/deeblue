@@ -1,7 +1,7 @@
 <template>
   <hooper :settings="hooperSettings" style="height: 100vh" class="slide flex justify-center">
     <slide>
-      <img class="p-2" src="~/assets/bbq1.jpg" />
+      <img class="p-2" src="~/assets/bbq.jpeg" />
     </slide>
     <slide>
       <img class="p-2" src="~/assets/a.jpg" />

@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="business">
-      <img class="pt-2" src="~/assets/link2.jpg" />
+      <img class="pt-2" src="~/assets/link2.jpeg" />
       <div class="flex justify-evenly text-white pt-32 pb-32 main-wrapper">
         <section class="left-title">
           <p class="">MISSION</p>
