@@ -13,7 +13,7 @@
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        action="mail-sent"
+        action="/pages/mail-sent"
         :class="sendingClass"
       >
         <input type="hidden" name="form-name" value="contact" />
