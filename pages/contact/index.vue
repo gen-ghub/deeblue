@@ -44,10 +44,6 @@
         />
         <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
       </validation-provider>
-      <div class="p-contact__item" v-show="false">
-        <label for="message">スパムでない場合は空欄</label>
-        <input type="text" name="bot-field" v-model="botField" />
-      </div>
       <validation-provider
         v-slot="{ errors }"
         rules="required|max:1000"
@@ -62,7 +58,9 @@
         />
         <p v-show="errors.length" class="p-contact__error">{{ errors[0] }}</p>
       </validation-provider>
-      <p>{{completeMessage}}</p>
+      <div class="p-contact__item" v-show="false">
+        <input type="text" name="bot-field" v-model="botField" placeholder="スパムでない場合は空欄" />
+      </div>
       <button class="mb-10" type="submit" :disabled="invalid || !validated">
         送信
       </button>
