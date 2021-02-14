@@ -27,7 +27,6 @@
             <nuxt-link class="tracking-widest font-thin" to="/contact"
               >お問い合わせ</nuxt-link
             >
-            <!-- <a class="tracking-widest font-thin" href="https://bbqdeli.jp/contact/">お問い合わせ</a> -->
           </li>
         </ul>
         <button
@@ -51,12 +50,6 @@
                   onclick="document.querySelector('body').classList.toggle('open');"
                 ></nuxt-link>
               </li>
-              <li class="menu-list">
-                <nuxt-link class="tracking-widest font-thin" to="/contact"
-              >お問い合わせ</nuxt-link
-            >
-                <!-- <a class="menu-link" href="https://bbqdeli.jp/contact/">お問い合わせ</a> -->
-              </li>
             </ul>
           </nav>
         </div>
@@ -74,6 +67,7 @@ export default {
         { href: '/Link01', title: '事業内容' },
         { href: '/Link02', title: '企業情報' },
         { href: '/link03', title: '採用情報' },
+        { href: '/contact', title: 'お問い合わせ' },
       ],
     }
   },
