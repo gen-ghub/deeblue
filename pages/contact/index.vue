@@ -10,7 +10,8 @@
       method="POST"
       netlify
       data-netlify-honeypot="bot-field"
-      @submit.prevent="onSubmit"
+      
+      :class="sendingClass"
     >
       <input type="hidden" name="form-name" value="contact" />
       <validation-provider
