@@ -1,5 +1,10 @@
 <template>
-  <section>
-    <p>送信完了</p>
+  <section class="">
+
   </section>
 </template>
+
+
+<style lang="scss" scoped>
+
+</style>

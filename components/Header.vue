@@ -52,7 +52,10 @@
                 ></nuxt-link>
               </li>
               <li class="menu-list">
-                <a class="menu-link" href="https://bbqdeli.jp/contact/">お問い合わせ</a>
+                <nuxt-link class="tracking-widest font-thin" to="/contact"
+              >お問い合わせ</nuxt-link
+            >
+                <!-- <a class="menu-link" href="https://bbqdeli.jp/contact/">お問い合わせ</a> -->
               </li>
             </ul>
           </nav>

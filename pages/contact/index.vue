@@ -3,9 +3,6 @@
     <h1 class="contact-title flex justify-center font-bold text-white">
       お問い合わせページ
     </h1>
-    <h1 class="mobile-contact-title flex justify-center font-bold text-white">
-      お問い合わせページ
-    </h1>
     <section class="flex justify-center">
       <validation-observer
         ref="observer"
@@ -14,7 +11,7 @@
         class=""
         name="contact"
         method="POST"
-        netlify
+        data-netlify="true"
         data-netlify-honeypot="bot-field"
         action="mail-sent"
         :class="sendingClass"
@@ -74,7 +71,6 @@
             <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
           </validation-provider>
         </div>
-
         <div class="" v-show="false">
           <input
             type="text"
