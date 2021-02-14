@@ -12,7 +12,7 @@
             <section>
               <div class="itme rounded bg-gray-50 p-5 shadow-2xl">
                 <div class="flex flex-wrap content-center justify-center mb-8">
-                  <img class="rounded" src="~/assets/bbq1.jpg" />
+                  <img class="rounded" src="~/assets/bbq.jpeg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
                   <nuxt-link to="/Link01" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
