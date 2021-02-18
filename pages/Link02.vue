@@ -66,24 +66,24 @@
         </div>
       </section>
       <section class="phone-company">
-        <div class="flex flex-col">
-          <section class="phone-value-section">
-            <h2 class="font-semibold">楽しさを感じてもらいたい</h2>
-            <p class="leading-loose">
-              自ら楽しんで、<br />
+        <div class="">
+          <section class="phone-value-section ">
+            <h2 class="font-semibold flex justify-center">楽しさを感じてもらいたい</h2>
+            <p class="leading-loose flex justify-center">
+              自ら楽しんで、
               その楽しさを人に伝染させる存在でありたい
             </p>
           </section>
           <section class="phone-value-section">
-            <h2 class="font-semibold">1人の顧客への大切さ</h2>
-            <p class="leading-loose">
-              多くのお客様へのサービスを<br />提供する中でも1つ1つ<span class="laptop-375"><br /></span>相手の事を考えもてなす精神を持つ
+            <h2 class="font-semibold flex justify-center">1人の顧客への大切さ</h2>
+            <p class="leading-loose flex justify-center">
+              多くのお客様へのサービスを提供する中でも1つ1つ相手の事を考えもてなす精神を持つ
             </p>
           </section>
           <section class="phone-value-section">
-            <h2 class="font-semibold">人と接する大切さ</h2>
-            <p class="leading-loose">
-              従業員と客という単純な関係でなく、<br />人と人としての繋がりを大切にして接する
+            <h2 class="font-semibold flex justify-center">人と接する大切さ</h2>
+            <p class="leading-loose flex justify-center">
+              従業員と客という単純な関係でなく、人と人としての繋がりを大切にして接する
             </p>
           </section>
         </div>
@@ -93,26 +93,26 @@
       <div class="flex justify-center">
         <h2 class="text-3xl">COMPANY</h2>
       </div>
-      <section class="mt-32 company flex justify-around">
-        <div class="company-div pb-6">
-          <div class="w1/2">
+      <section class="mt-32 company flex justify-center">
+        <div class="company-div pb-6 mr-20">
+          <div class="">
             <dl class="flex mt-10">
               <dt class="w-40">会社名：</dt>
               <dd>株式会社DEEBLUE</dd>
             </dl>
-            <dl class="flex mt-10">
+            <dl class="flex mt-4">
               <dt class="w-40">設立：</dt>
               <dd>2013年2月</dd>
             </dl>
-            <dl class="flex mt-10">
+            <dl class="flex mt-4">
               <dt class="w-40">代表者：</dt>
               <dd>南里　次郎</dd>
             </dl>
-            <dl class="flex mt-10">
+            <dl class="flex mt-4">
               <dt class="w-40">事業内容：</dt>
-              <dd>アウトドア用品レンタル事業、イベント事業</dd>
+              <dd>アウトドア用品レンタル事業<br>イベント事業</dd>
             </dl>
-            <dl class="flex mt-10">
+            <dl class="flex mt-4">
               <dt class="w-40">会社所在地：</dt>
               <dd>東京都豊島区上池袋1-11-5-1B</dd>
             </dl>
@@ -176,9 +176,6 @@ export default {
 .laptop-768 {
   display: none;
 }
-.laptop-375{
-  display: none;
-}
 .phone-company {
   display: none;
 }
@@ -218,8 +215,8 @@ export default {
 }
 .map {
   img {
-    height: 60vh;
-    width: 35vw;
+    height: 50vh;
+    width: 30vw;
     object-fit: cover;
   }
 }
@@ -229,6 +226,12 @@ export default {
       font-size: 14px;
     }
   }
+  .map {
+  img {
+    height: 360px;
+    width: 360px;
+  }
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -265,22 +268,19 @@ export default {
   }
 }
   .company-wrapper {
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
   .company {
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 4rem;
     dt {
       width: 8rem;
     }
-    dl {
-      margin-top: 2.5rem;
-    }
   }
   .map {
     img {
-      height: 50vh;
-      width: 40vw;
+      height: 300px;
+      width: 300px;
     }
   }
 }
@@ -318,26 +318,92 @@ export default {
       font-size: 10px;
     }
   }
+  .company-wrapper {
+    padding-top: 3rem;
+  }
+  .company-div{
+    margin-right: 30px;
+    margin-top: 40px;
+  }
   .company {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 2rem;
-    .company-div {
-      padding-top: 20px;
-    }
-    dl{
-      margin-top: 1.5rem;
-    }
     dt {
       width: 6rem;
     }
-    dd {
-      font-size: 12px;
+    dl{
+      margin-top: 10px;
     }
   }
   .map {
     img {
-      height: 40vh;
-      width: 40vw;
+      margin-top: 20px;
+      height: 230px;
+      width: 250px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .company {
+    font-size: 14px;
+  }
+  .map {
+    img {
+      margin-top: 20px;
+      height: 210px;
+      width: 230px;
+    }
+  }
+}
+@media screen and (max-width: 580px){
+  .value-content {
+    margin-left: 0;
+  }
+  .value-wrapper{
+    padding: 20px 0;
+  }
+  .phone-value-section{
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+    .leading-loose{
+
+    }
+    h2{
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+    p{
+      font-size: 10px;
+    }
+  }
+  .pc-company {
+    display: none;
+  }
+  .company-wrapper {
+    padding-top: 0;
+  }
+  .phone-company {
+    display: block;
+    .company {
+      margin-top: 4vh;
+      margin-bottom: 8vh;
+    .company-div{
+      font-size: 12px;
+      margin: 0;
+      margin-top: 10px;
+    }
+      .company-img {
+        margin-top: 1vh;
+        height: 150px;
+        width: 180px;
+      }
+      dl{
+        margin-top: 5px;
+      }
+      dt{
+        width: 80px;
+      }
     }
   }
 }
@@ -377,48 +443,27 @@ export default {
     padding: 20px 0;
   }
   .phone-value-section{
-    padding: 20px 0;
-    width: 70%;
-    padding-left: 30px;
-    margin: auto;
+    width: 75%;
     h2{
       font-size: 14px;
       padding-bottom: 10px;
     }
     p{
       font-size: 10px;
-    }
-  }
-  .pc-company {
-    display: none;
-  }
-  .company-wrapper {
-    padding-top: 0;
-  }
-  .phone-company {
-    display: block;
-    .company {
-      margin-top: 4vh;
-      margin-bottom: 8vh;
-
-      .company-img {
-        margin-top: 1vh;
-        height: 15vh;
-        width: 40vw;
-        object-fit: cover;
-      }
-      dl{
-        margin-top: 0.6rem;
-      }
+      padding: 0 50px;
     }
   }
 }
 @media screen and (max-width: 375px){
-  .laptop-375{
-    display: inline;
-  }
   .right-p {
     width: 55%;
+  }
+  .phone-value-section{
+    width: 75%;
+    p{
+      font-size: 10px;
+      padding: 0 30px;
+    }
   }
 }
 @media screen and (max-width: 320px){
@@ -441,11 +486,13 @@ export default {
     }
   }
   .phone-value-section{
-    padding-left: 20px;
     h2{
       font-size: 12px;
     }
-
+    p{
+      font-size: 10px;
+      padding: 0 10px;
+    }
   }
 }
 </style>
