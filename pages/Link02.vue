@@ -126,7 +126,7 @@
     <div class="phone-company company-wrapper flex justify-center">
       <section class="company">
         <div class="flex justify-center">
-          <h1 class="">COMPANY</h1>
+          <h2 class="">COMPANY</h2>
         </div>
         <section class="map flex justify-center">
           <img class="company-img" src="~/assets/user.png" />
@@ -232,6 +232,12 @@ export default {
     width: 360px;
   }
 }
+.company-wrapper{
+  padding-top: 5rem;
+}
+.company {
+  margin-top: 4rem;
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -269,6 +275,9 @@ export default {
 }
   .company-wrapper {
     padding-top: 5rem;
+    h2{
+      font-size: 20px;
+    }
   }
   .company {
     font-size: 18px;
@@ -320,6 +329,9 @@ export default {
   }
   .company-wrapper {
     padding-top: 3rem;
+    h2{
+      font-size: 16px;
+    }
   }
   .company-div{
     margin-right: 30px;
@@ -344,6 +356,11 @@ export default {
   }
 }
 @media screen and (max-width: 650px) {
+  .company-wrapper {
+    h2{
+      font-size: 14px;
+    }
+  }
   .company {
     font-size: 14px;
   }
@@ -388,6 +405,9 @@ export default {
     .company {
       margin-top: 4vh;
       margin-bottom: 8vh;
+      h2{
+        font-size: 12px;
+      }
     .company-div{
       font-size: 12px;
       margin: 0;
@@ -403,6 +423,10 @@ export default {
       }
       dt{
         width: 80px;
+        font-size: 10px;
+      }
+      dd{
+        font-size: 10px;
       }
     }
   }
