@@ -10,7 +10,7 @@
           tag="form"
           name="contact"
           method="POST"
-          data-netlify="true"
+          netlify
           netlify-honeypot="bot-field"
           action="/mail-sent"
           :class="sendingClass"
