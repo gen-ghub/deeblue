@@ -10,10 +10,10 @@
           tag="form"
           name="contact"
           method="POST"
-          netlify
           netlify-honeypot="bot-field"
           action="/mail-sent"
           :class="sendingClass"
+          netlify
         >
         <input type="hidden" name="form-name" value="contact" />
           <div class="contact_item flex flex-col">
