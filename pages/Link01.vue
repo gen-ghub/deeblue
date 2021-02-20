@@ -97,6 +97,14 @@
           <div class="image-color"></div>
         </div>
         <div class="explanation-wrapper">
+          <router-link
+    :to="{
+        name: 'Link01',
+        hash: '#testBlock'
+    }"
+>
+    Link to TestBlock in TestPage
+</router-link>
           <h1>公園バーベキュー場運営管理</h1>
           <p class="">
             滋賀県大津市、琵琶湖のほとりの大津市なぎさ公園の運営管理を
@@ -173,21 +181,41 @@
 import Breadcrumb from '~/components/Breadcrumb.vue'
 
 export default {
-  computed: {
-    breadcrumbs: function () {
-      return {
-        data: [
-          {
-            name: 'トップページ',
-            path: '/',
-          },
-          {
-            name: '事業内容',
-          },
-        ],
-      }
+  // computed: {
+  //   breadcrumbs: function () {
+  //     return {
+  //       data: [
+  //         {
+  //           name: 'トップページ',
+  //           path: '/',
+  //         },
+  //         {
+  //           name: '事業内容',
+  //         },
+  //       ],
+  //     }
+  //   },
+  // },
+  data: function(){
+        return {
+            hash: this.$route.hash,
+        }
     },
-  },
+    mounted() {
+        this.$nextTick(function () {
+            if (this.hash) {
+                const refName = this.hash.replace('#', '')
+                this.scrollToAnchorPoint(refName)
+            }
+        })
+    },
+    methods: {
+        scrollToAnchorPoint(refName) {
+            const el = this.$refs[refName]
+            el.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+
 }
 </script>
 
