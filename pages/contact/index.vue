@@ -11,8 +11,6 @@
           name="contact"
           method="POST"
           netlify-honeypot="bot-field"
-          action="/mail-sent"
-          :class="sendingClass"
           netlify
         >
         <input type="hidden" name="form-name" value="contact" />
