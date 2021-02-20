@@ -115,7 +115,6 @@ export default {
         return
       }
       this.isSending = true
-      this.completeMessage = '送信処理中…'
       const params = new URLSearchParams()
       params.append('form-name', 'contact')
       params.append('name', this.name)
@@ -124,22 +123,7 @@ export default {
       if (this.botField) {
         params.append('bot-field', this.botField)
       }
-      this.$axios
-        .$post('/', params)
-        .then(() => {
-          this.completeMessage = 'お問い合わせを送信しました！'
-          this.resetForm()
-          this.isSubmit = true
-        })
-        .catch((err) => {
-          this.completeMessage = 'お問い合わせの送信が失敗しました'
-          this.isError = true
-        })
-        .finally(() => {
-          this.isSending = false
-        })
     },
-
     resetForm() {
       this.name = ''
       this.email = ''
