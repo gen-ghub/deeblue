@@ -15,7 +15,7 @@
                   <img class="rounded" src="~/assets/bbq.jpeg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
-                  <nuxt-link to="/Link01" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
+                  <nuxt-link to="/Link01#bbq-rental" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
                     　 BBQ 　
                   </nuxt-link>
                 </div>
@@ -29,7 +29,7 @@
                   <img class=" rounded" src="~/assets/biru.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
-                  <nuxt-link to="/Link01" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
+                  <nuxt-link to="/Link01#beer-delivery" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
                     　BEER　
                   </nuxt-link>
                 </div>
@@ -43,7 +43,7 @@
                   <img class=" rounded" src="~/assets/a.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
-                  <nuxt-link to="/Link01" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
+                  <nuxt-link to="/Link01#bridal" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
                     　BRIDAL　
                   </nuxt-link>
                 </div>
@@ -57,7 +57,7 @@
                     <img class=" rounded" src="~/assets/camp.jpg" />
                 </div>
                 <div class="flex flex-wrap content-center justify-center">
-                  <nuxt-link to="/Link01" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
+                  <nuxt-link to="/Link01#camp-management" class="btn-h1 border border-blue-900 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700">
                     　PARK　
                   </nuxt-link>
                 </div>
@@ -71,7 +71,8 @@
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style lang="scss" scoped>

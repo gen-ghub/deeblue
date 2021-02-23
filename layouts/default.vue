@@ -1,10 +1,10 @@
 <template>
-  <section ref="testBlock" class="relative">
+  <section ref="top" class="relative">
     <Header />
     <main>
       <Nuxt />
     </main>
-    <a class="absolute" @click="scrollToAnchorPoint('testBlock')">
+    <a class="absolute" @click="scrollToAnchorPoint('top')">
       <img class="" src="~/assets/up.png"/>
     </a>
     <Footer />

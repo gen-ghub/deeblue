@@ -1,10 +1,9 @@
 <template>
-  <div class="font-serif">
+  <div class="font-serif relative">
     <div class="project-title center">
       <h1>事業内容一覧</h1>
     </div>
-    <section>
-      <!-- <breadcrumb class="" :breadcrumbs="breadcrumbs" /> -->
+    <section id="bbq-rental">
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/bbq.jpeg" />
@@ -55,7 +54,7 @@
         </div>
       </section>
     </section>
-    <section>
+    <section id="beer-delivery">
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/biru.jpg" />
@@ -90,6 +89,7 @@
         </div>
       </section>
     </section>
+    <div id="camp-management" class="camp-scroll"></div>
     <section>
       <section class="item-wrapper">
         <div class="image-wrapper">
@@ -97,14 +97,6 @@
           <div class="image-color"></div>
         </div>
         <div class="explanation-wrapper">
-          <router-link
-    :to="{
-        name: 'Link01',
-        hash: '#testBlock'
-    }"
->
-    Link to TestBlock in TestPage
-</router-link>
           <h1>公園バーベキュー場運営管理</h1>
           <p class="">
             滋賀県大津市、琵琶湖のほとりの大津市なぎさ公園の運営管理を
@@ -139,7 +131,7 @@
         </div>
       </section>
     </section>
-    <section>
+    <section id="bridal">
       <section class="item-wrapper">
         <div class="image-wrapper">
           <img class="image-size" src="~/assets/a.jpg" />
@@ -178,45 +170,8 @@
 </template>
 
 <script>
-import Breadcrumb from '~/components/Breadcrumb.vue'
 
-export default {
-  // computed: {
-  //   breadcrumbs: function () {
-  //     return {
-  //       data: [
-  //         {
-  //           name: 'トップページ',
-  //           path: '/',
-  //         },
-  //         {
-  //           name: '事業内容',
-  //         },
-  //       ],
-  //     }
-  //   },
-  // },
-  data: function(){
-        return {
-            hash: this.$route.hash,
-        }
-    },
-    mounted() {
-        this.$nextTick(function () {
-            if (this.hash) {
-                const refName = this.hash.replace('#', '')
-                this.scrollToAnchorPoint(refName)
-            }
-        })
-    },
-    methods: {
-        scrollToAnchorPoint(refName) {
-            const el = this.$refs[refName]
-            el.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
 
-}
 </script>
 
 <style lang="scss" scoped>
@@ -311,6 +266,9 @@ export default {
     background-color: #022444;
     color: #fff;
   }
+}
+.camp-scroll{
+  position: absolute;
 }
 
 @media screen and (max-width: 1400px) {

@@ -1,9 +1,6 @@
 <template>
   <section >
     <PhotoImage />
-    <router-link to="/Link01#testBlock">
-    Link to TestBlock in TestPage
-</router-link>
     <TopExplanation />
     <Business />
     <section class="h-full flex justify-center contact">
@@ -28,25 +25,6 @@ export default {
     TopExplanation,
     Business,
   },
-  data: function(){
-        return {
-            hash: this.$route.hash,
-        }
-    },
-    mounted() {
-        this.$nextTick(function () {
-            if (this.hash) {
-                const refName = this.hash.replace('#', '')
-                this.scrollToAnchorPoint(refName)
-            }
-        })
-    },
-    methods: {
-        scrollToAnchorPoint(refName) {
-            const el = this.$refs[refName]
-            el.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
 }
 
 </script>
