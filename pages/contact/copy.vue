@@ -4,103 +4,99 @@
       お問い合わせページ
     </h1>
     <section class="flex justify-center">
-      <validation-observer
-        ref="observer"
-        v-slot="{ invalid, validated }"
-        tag="form"
-        class=""
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        action="/pages/mail-sent"
-        :class="sendingClass"
-      >
+        <validation-observer
+          ref="observer"
+          v-slot="{ invalid, validated }"
+          tag="form"
+          name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
+          action="/success"
+          netlify
+        >
         <input type="hidden" name="form-name" value="contact" />
-        <div class="contact_item flex flex-col">
-          <label for="name" class="contact-label font-semibold">お名前</label>
-          <validation-provider
-            v-slot="{ errors }"
-            rules="required|max:100"
-            name="お名前"
-          >
+          <div class="contact_item flex flex-col">
+            <label for="name" class="contact-label font-semibold">お名前</label>
+            <validation-provider
+              v-slot="{ errors }"
+              rules="required|max:100"
+              name="お名前"
+            >
+              <input
+                id="name"
+                name="name"
+                v-model="name"
+                class="text-box"
+                type="text"
+                placeholder="お名前をご入力ください"
+              />
+              <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
+            </validation-provider>
+          </div>
+          <div class="contact_item flex flex-col">
+            <label for="email" class="contact-label font-semibold">メールアドレス</label>
+            <validation-provider
+              v-slot="{ errors }"
+              rules="required|email|max:256"
+              name="メールアドレス"
+            >
+              <input
+                id="email"
+                name="email"
+                v-model="email"
+                class="text-box"
+                type="email"
+                placeholder="ご返信の際にこちらのアドレスを使用します"
+              />
+              <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
+            </validation-provider>
+          </div>
+          <div class="contact_item flex flex-col">
+            <label for="message" class="contact-label font-semibold">お問い合わせ内容</label>
+            <validation-provider
+              v-slot="{ errors }"
+              rules="required|max:1000"
+              name="お問い合わせ内容"
+            >
+              <textarea
+                id="contact"
+                name="contact"
+                v-model="contact"
+                class="contact-box"
+                placeholder="お問い合わせ内容を入力してください。"
+              />
+              <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
+            </validation-provider>
+          </div>
+          <div class="" v-show="false">
             <input
-              id="name"
-              name="name"
-              v-model="name"
-              class="text-box"
               type="text"
-              placeholder="お名前をご入力ください"
+              name="bot-field"
+              v-model="botField"
+              placeholder="スパムでない場合は空欄"
             />
-            <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
-          </validation-provider>
-        </div>
-        <div class="contact_item flex flex-col">
-          <label for="email" class="contact-label font-semibold">メールアドレス</label>
-          <validation-provider
-            v-slot="{ errors }"
-            rules="required|email|max:256"
-            name="メールアドレス"
-          >
-            <input
-              id="email"
-              name="email"
-              v-model="email"
-              class="text-box"
-              type="email"
-              placeholder="ご返信の際にこちらのアドレスを使用します"
-            />
-            <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
-          </validation-provider>
-        </div>
-        <div class="contact_item flex flex-col">
-          <label for="message" class="contact-label font-semibold">お問い合わせ内容</label>
-
-          <validation-provider
-            v-slot="{ errors }"
-            rules="required|max:1000"
-            name="お問い合わせ内容"
-          >
-            <textarea
-              id="message"
-              name="message"
-              v-model="message"
-              class="contact-box"
-              placeholder="お問い合わせ内容を入力してください。"
-            />
-            <p v-show="errors.length" class="contact_error">{{ errors[0] }}</p>
-          </validation-provider>
-        </div>
-        <div class="" v-show="false">
-          <input
-            type="text"
-            name="bot-field"
-            v-model="botField"
-            placeholder="スパムでない場合は空欄"
-          />
-        </div>
-        <div class="flex justify-center">
-          <button class="btn rounded-md" type="submit" :disabled="invalid || !validated">
+          </div>
+          <div class="flex justify-center">
+            <button class="btn rounded-md" type="submit" :disabled="invalid || !validated">
             送信
           </button>
-        </div>
-      </validation-observer>
+          </div>
+        </validation-observer>
     </section>
   </section>
 </template>
-
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
       name: '',
       email: '',
-      message: '',
+      contact: '',
       botField: '',
       isSubmit: false,
       isSending: false,
       isError: false,
-      completeMessage: '',
     }
   },
   computed: {
@@ -118,7 +114,6 @@ export default {
         return
       }
       this.isSending = true
-      this.completeMessage = '送信処理中…'
       const params = new URLSearchParams()
       params.append('form-name', 'contact')
       params.append('name', this.name)
@@ -127,22 +122,7 @@ export default {
       if (this.botField) {
         params.append('bot-field', this.botField)
       }
-      this.$axios
-        .$post('/', params)
-        .then(() => {
-          this.completeMessage = 'お問い合わせを送信しました！'
-          this.resetForm()
-          this.isSubmit = true
-        })
-        .catch((err) => {
-          this.completeMessage = 'お問い合わせの送信が失敗しました'
-          this.isError = true
-        })
-        .finally(() => {
-          this.isSending = false
-        })
     },
-
     resetForm() {
       this.name = ''
       this.email = ''
@@ -153,9 +133,8 @@ export default {
   },
 }
 </script>
-
 <style lang="scss" scoped>
-.mobile-contact-title{
+.mobile-contact-title {
   display: none;
 }
 .form-wrapper {
@@ -167,72 +146,72 @@ export default {
   font-size: 30px;
   margin-bottom: 10vh;
 }
-.contact-label{
+.contact-label {
   font-size: 20px;
   color: #fff;
 }
-.text-box{
+.text-box {
   width: 350px;
   height: 30px;
 }
-.contact-box{
+.contact-box {
   width: 500px;
   height: 300px;
 }
-.contact_item{
+.contact_item {
   margin-bottom: 25px;
 }
-.contact_error{
+.contact_error {
   color: #fff;
 }
-.btn{
+.btn {
   color: #fff;
   padding: 6px 20px;
   background: #022444;
-  border:1px solid #fff;
-  &:hover{
+  border: 1px solid #fff;
+  &:hover {
     color: black;
     background-color: #fff;
-    border:1px solid black;
+    border: 1px solid black;
   }
 }
 @media screen and (max-width: 765px) {
-  .contact-label{
-  font-size: 16px;
-}
+  .contact-label {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 425px) {
   .contact-title {
-  font-size: 26px;
-  margin-bottom: 6vh;
+    font-size: 26px;
+    margin-bottom: 6vh;
+  }
+  .text-box {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .contact-box {
+    width: 300px;
+    height: 300px;
+    font-size: 14px;
+  }
 }
-.text-box{
-  width: 300px;
-  height: 30px;
-  font-size: 14px;
-}
-.contact-box{
-  width: 300px;
-  height: 300px;
-  font-size: 14px;
-}
-}
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .contact-title {
-  font-size: 20px;
-  margin-bottom: 6vh;
+    font-size: 20px;
+    margin-bottom: 6vh;
+  }
 }
-}
-@media screen and (max-width: 320px){
-.text-box{
-  width: 260px;
-  height: 30px;
-  font-size: 12px;
-}
-.contact-box{
-  width: 260px;
-  height: 260px;
-  font-size: 12px;
-}
+@media screen and (max-width: 320px) {
+  .text-box {
+    width: 260px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .contact-box {
+    width: 260px;
+    height: 260px;
+    font-size: 12px;
+  }
 }
 </style>
